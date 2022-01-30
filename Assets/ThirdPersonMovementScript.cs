@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 //Impement Random bored anim, after some time standing still
 
 //Sepreate code into funktions, 
-//Create Seperate class/funktion for animator Code
+//Create Seperate class/funktion for animator Code   <--- nevermind that's stupid 
 
 public class ThirdPersonMovementScript : MonoBehaviour
 {
@@ -109,6 +109,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
         contoller.Move(currentVel * Time.deltaTime);
         if (_inputs.jump && isGrounded)
         {
+
+
             isJumping = true;
             //currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
             Invoke("AddJumpForce", 0.15f);

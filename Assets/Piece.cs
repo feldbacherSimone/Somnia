@@ -8,20 +8,23 @@ public class Piece: MonoBehaviour
     private Material onMat;
     public Puzzle puzzleManager; 
     private Material offMat;
-   [SerializeField] bool isOn;
+    public bool isOn;
     public Vector3 gridCoords;
-
+    public bool puzzleSolved = false; 
 
     private void Awake()
     {
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
  
-        onMat = (Material)Resources.Load("OnMat");
-        offMat = (Material)Resources.Load("OffMat");
+        onMat = (Material)Resources.Load("Materials/OnMat");
+        offMat = (Material)Resources.Load("Materials/OffMat");
         SwitchColors();
+
+      
     }
     public void SwitchColors()
     {
+
         if (isOn)
         {
             meshRenderer.material = onMat; 
@@ -34,9 +37,12 @@ public class Piece: MonoBehaviour
 
     public void Onhit()
     {
-        isOn = isOn ? false : true;
-        SwitchColors();
-        puzzleManager.SwitchStates(gridCoords);
+        if (!puzzleSolved) {
+            isOn = isOn ? false : true;
+            SwitchColors();
+            puzzleManager.SwitchStates(gridCoords);
+        }
+     
     }
     public void SwitchStates()
     {

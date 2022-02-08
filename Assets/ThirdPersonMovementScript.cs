@@ -99,7 +99,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
             currentBlend = Mathf.SmoothDamp(currentBlend, (_inputs.move.magnitude * speed) / sprintSpeed, ref smoothBlendVel, animationSmoothTime);
             currentBlend = Mathf.Clamp(currentBlend, 0, 1);
-            print(currentBlend); 
+            //print(currentBlend); 
             animator.SetFloat("Blend", currentBlend);
         }
     }
@@ -115,7 +115,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
             //currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
             Invoke("AddJumpForce", 0.15f);
             
-            print(currentVel);
+            //print(currentVel);
         }
         else
         {

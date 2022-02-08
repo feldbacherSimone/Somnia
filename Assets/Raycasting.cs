@@ -9,13 +9,9 @@ public class Raycasting : MonoBehaviour
     [SerializeField] private GameObject sphere;
     [SerializeField] private Material otherMat;
 
-
-
-
     private RaycastHit _hit;
-    private Vector3 _worldPos;
-
-
+    private Vector3 _targetPos;
+    private Ray ray;
    
     private void Update()
     {
@@ -24,43 +20,44 @@ public class Raycasting : MonoBehaviour
             SelectSquare();
         }
         RaycastTest();
-        
-    }
+        }
 
     void RaycastTest()
     {
         Vector3 pos = Input.mousePosition;
-        Vector3 newPos = new Vector3(pos.x, pos.y, camera.transform.position.z +10 );
-        _worldPos = camera.ScreenToWorldPoint(newPos);
+        Vector3 newPos = new Vector3(pos.x, pos.y, camera.transform.position.z +1 );
+        //Vector3 _worldPos = camera.ScreenToWorldPoint(newPos);
         //print(_worldPos);
-        sphere.transform.position = _worldPos; 
+        //sphere.transform.position = _worldPos;
+        //_targetPos = _worldPos - transform.position; //why was this easy to fix, this shouldn't be easy to fix q-q
 
-        if (Physics.Raycast(transform.position, _worldPos, out _hit, Mathf.Infinity))
+        ray = Camera.main.ScreenPointToRay (newPos);
+
+        if (Physics.Raycast(ray, out _hit, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position, _worldPos * _hit.distance, Color.yellow);
-           
+            Debug.DrawRay(ray.origin, ray.direction * _hit.distance, Color.yellow);
+            sphere.transform.position = _hit.point;
         }
         else
         {
-            Debug.DrawRay(transform.position, _worldPos * 1000, Color.white);
-            
-            
+            Debug.DrawRay(ray.origin,ray.direction * 1000, Color.white);        
         }     
     }
 
     private void SelectSquare()
     {
         Debug.Log("Click!");
-        if (Physics.Raycast(transform.position, _worldPos, out _hit, Mathf.Infinity))
+        if (Physics.Raycast(ray, out _hit, Mathf.Infinity))
         {
-            _hit.collider.gameObject.GetComponent<Piece>().Onhit();
+
+            Piece piece = _hit.collider.gameObject.GetComponent<Piece>();
+            if(piece != null)
+            {
+                piece.Onhit();
+            }
             Debug.Log("Did Hit");
-        }
-       
+        }       
             //Debug.Log("Did not Hit"); 
     }
-
-
-
     }
 

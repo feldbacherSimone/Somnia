@@ -6,9 +6,9 @@ public class Puzzle : MonoBehaviour
 {
     [SerializeField] private GameObject[] tiles; 
 
-   [SerializeField] private GameObject[,,] pieces; //this is causing so much less problems than expected, it's getting suspicious
-   [SerializeField] private int width = 1;
-   [SerializeField] private int height = 1;
+    [SerializeField] private GameObject[,,] pieces; //this is causing so much less problems than expected, it's getting suspicious
+    [SerializeField] private int width = 1;
+    [SerializeField] private int height = 1;
     [SerializeField] private int depth = 1;
 
     [SerializeField] private Transform initTile;
@@ -87,6 +87,7 @@ public class Puzzle : MonoBehaviour
         if (solved)
         {
             Debug.Log(gameObject.name + " is solved");
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve);
             foreach(GameObject tile in tiles)
             {
                 tile.GetComponent<Piece>().enabled = false;

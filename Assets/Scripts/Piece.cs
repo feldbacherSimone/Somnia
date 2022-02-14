@@ -39,6 +39,8 @@ public class Piece: MonoBehaviour
     public void Onhit()
     {
         if (!puzzleSolved) {
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleInteract);
+
             isOn = isOn ? false : true;
             SwitchColors();
             puzzleManager.SwitchStates(gridCoords);

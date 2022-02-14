@@ -10,7 +10,8 @@ public class Piece: MonoBehaviour
     private Material offMat;
     public bool isOn;
     public Vector3 gridCoords;
-    public bool puzzleSolved = false; 
+    public bool puzzleSolved = false;
+    [SerializeField] Piece sisterTile; 
 
     private void Awake()
     {
@@ -41,6 +42,12 @@ public class Piece: MonoBehaviour
             isOn = isOn ? false : true;
             SwitchColors();
             puzzleManager.SwitchStates(gridCoords);
+        } 
+        if(sisterTile != null)
+        {
+            sisterTile.isOn = sisterTile.isOn ? false : true; 
+            sisterTile.SwitchColors();
+            
         }
      
     }

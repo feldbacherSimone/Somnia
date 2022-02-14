@@ -13,6 +13,9 @@ using UnityEngine.InputSystem;
 
 public class ThirdPersonMovementScript : MonoBehaviour
 {
+    [SerializeField] private Transform respawnPoint;
+    [SerializeField]private Vector3 respawnCoords; 
+
     [SerializeField]
     private float moveSmoothTime = 0.2f;
     private float animationSmoothTime = 0.3f; 
@@ -47,12 +50,17 @@ public class ThirdPersonMovementScript : MonoBehaviour
     private float currentBlend;
     private float smoothBlendVel;
 
-    public float jumpAniticipationTime; 
-
+    public float jumpAniticipationTime;
+    [SerializeField] private float deathHeight; 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (respawnPoint != null)
+            respawnCoords = respawnPoint.position;
+        else
+            respawnCoords = transform.position; 
+
         contoller = gameObject.GetComponent<CharacterController>();
         _inputs = gameObject.GetComponent<StarterAssets.StarterAssetsInputs>();
     }
@@ -69,6 +77,11 @@ public class ThirdPersonMovementScript : MonoBehaviour
         Move();
         Jump();
     
+    }
+    private void LateUpdate()
+    {
+        if (transform.position.y < deathHeight)
+            gameObject.transform.position = respawnCoords; 
     }
 
     public void AddJumpForce()
@@ -125,4 +138,5 @@ public class ThirdPersonMovementScript : MonoBehaviour
         animator.SetBool("isJumping", isJumping);
         animator.SetBool("Grounded", isGrounded);
     }
+
 }

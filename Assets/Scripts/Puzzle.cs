@@ -6,7 +6,7 @@ public class Puzzle : MonoBehaviour
 {
     [SerializeField] private GameObject[] tiles; 
 
-   [SerializeField] private GameObject[,,] pieces; //this is causing so much less problems than expectes, it's getting suspicious
+   [SerializeField] private GameObject[,,] pieces; //this is causing so much less problems than expected, it's getting suspicious
    [SerializeField] private int width = 1;
    [SerializeField] private int height = 1;
     [SerializeField] private int depth = 1;
@@ -14,19 +14,23 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private Transform initTile;
 
     [SerializeField] private Vector3 coord;
-    [SerializeField] private int distance;
+    [SerializeField] private float distance;
+    [SerializeField] private Vector3 vecDistance; 
     //public  bool[,] fields;
     [SerializeField] private bool solved; 
 
     private void Start()
     {
+        if (distance != 0)
+            vecDistance = new Vector3(distance, distance, distance);
+
       //  fields = new bool[height ,width];
         pieces = new GameObject[width, height, depth];
 
 
         foreach(GameObject tile in tiles)
         {
-           Vector3 noramlizedCords =  ConvertToGridspace(tile.transform.position);
+           Vector3 noramlizedCords =  ConvertToGridspace(tile.transform.position, tile.transform.parent);
             tile.GetComponent<Piece>().puzzleManager = this;
             tile.GetComponent<Piece>().gridCoords = noramlizedCords;
             print(Mathf.RoundToInt(noramlizedCords.x).ToString() + Mathf.RoundToInt(noramlizedCords.z).ToString() + Mathf.RoundToInt(noramlizedCords.y) + tile.name);
@@ -35,11 +39,12 @@ public class Puzzle : MonoBehaviour
     
     }
 
-    private Vector3 ConvertToGridspace(Vector3 coordinates) 
+    private Vector3 ConvertToGridspace(Vector3 coordinates, Transform parent) 
     {
         Vector3 newCords = coordinates - initTile.position;
-        Vector3 gridSpace = newCords / distance;
-
+        newCords = new Vector3(newCords.x / parent.localScale.x, newCords.y / parent.localScale.y, newCords.z / parent.localScale.z);
+        Vector3 gridSpace = new Vector3(newCords.x / vecDistance.x, newCords.y / vecDistance.y, newCords.z / vecDistance.z);
+      
             return gridSpace; 
     }
 

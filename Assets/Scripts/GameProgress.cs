@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameProgress : MonoBehaviour
 {
     [SerializeField] GameObject[] spheres;
-    [SerializeField] int ammountSloved;
+    public int ammountSloved;
     Material sphereOn;
 
 

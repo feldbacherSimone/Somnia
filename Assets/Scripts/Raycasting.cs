@@ -8,6 +8,12 @@ public class Raycasting : MonoBehaviour
     [SerializeField] private Camera camera;
     [SerializeField] private GameObject sphere;
     [SerializeField] private Material otherMat;
+    [SerializeField] private Animator animator;
+
+    [SerializeField]private float weightSmoothTime = 0.4f; 
+    private float weightSmoothVel;
+
+    private float currentWeight; 
 
     private RaycastHit _hit;
     private Vector3 _targetPos;
@@ -35,8 +41,21 @@ public class Raycasting : MonoBehaviour
 
         if (Physics.Raycast(ray, out _hit, Mathf.Infinity))
         {
+
             Debug.DrawRay(ray.origin, ray.direction * _hit.distance, Color.yellow);
             sphere.transform.position = _hit.point;
+
+            Piece piece = _hit.collider.gameObject.GetComponent<Piece>();
+            if (piece != null)
+            {
+                RaiseHand(1f);
+                //print("raise" + currentWeight);
+            }
+            else
+            {
+                RaiseHand(0f);
+                //print("dont raise" + currentWeight);
+            }
         }
         else
         {
@@ -53,11 +72,21 @@ public class Raycasting : MonoBehaviour
             Piece piece = _hit.collider.gameObject.GetComponent<Piece>();
             if(piece != null)
             {
+
                 piece.Onhit();
             }
+          
             Debug.Log("Did Hit");
         }       
             //Debug.Log("Did not Hit"); 
     }
+
+
+    public void RaiseHand(float target)
+    {
+        animator.SetLayerWeight(2, Mathf.SmoothDamp(currentWeight, target, ref weightSmoothVel, weightSmoothTime));
+        currentWeight = animator.GetLayerWeight(2);
+    }
+
     }
 

@@ -20,6 +20,7 @@ public class GameAssets : MonoBehaviour
     public class SoundAudioClip
     {
         public SoundManager.Sound sound;
-        public AudioClip audioClip;
+        public AudioClip[] audioClip;
+        public float volume = 1; 
     }
 }

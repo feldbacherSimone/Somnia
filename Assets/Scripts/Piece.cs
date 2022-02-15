@@ -39,7 +39,7 @@ public class Piece: MonoBehaviour
     public void Onhit()
     {
         if (!puzzleSolved) {
-            SoundManager.PlaySound(SoundManager.Sound.PuzzleInteract);
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleInteract, transform.position);
 
             isOn = isOn ? false : true;
             SwitchColors();

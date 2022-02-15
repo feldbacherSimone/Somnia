@@ -14,7 +14,9 @@ using UnityEngine.InputSystem;
 public class ThirdPersonMovementScript : MonoBehaviour
 {
     [SerializeField] private Transform respawnPoint;
-    [SerializeField]private Vector3 respawnCoords; 
+    [SerializeField]private Vector3 respawnCoords;
+
+    [SerializeField] Footstep stepSounds; 
 
     [SerializeField]
     private float moveSmoothTime = 0.2f;
@@ -114,6 +116,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
             currentBlend = Mathf.Clamp(currentBlend, 0, 1);
             //print(currentBlend); 
             animator.SetFloat("Blend", currentBlend);
+            stepSounds.setCurretnVol(currentBlend); 
         }
     }
     private void Jump()
@@ -138,5 +141,5 @@ public class ThirdPersonMovementScript : MonoBehaviour
         animator.SetBool("isJumping", isJumping);
         animator.SetBool("Grounded", isGrounded);
     }
-
+    
 }

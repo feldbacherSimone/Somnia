@@ -87,7 +87,7 @@ public class Puzzle : MonoBehaviour
         if (solved)
         {
             Debug.Log(gameObject.name + " is solved");
-            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve);
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position);
             foreach(GameObject tile in tiles)
             {
                 tile.GetComponent<Piece>().enabled = false;

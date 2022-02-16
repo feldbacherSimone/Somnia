@@ -53,6 +53,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
     private float smoothBlendVel;
 
     public float jumpAniticipationTime;
+    float remainingTime;
     [SerializeField] private float deathHeight; 
 
     // Start is called before the first frame update
@@ -123,6 +124,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
     {
         currentVel.y -= gravity * Time.deltaTime;
         contoller.Move(currentVel * Time.deltaTime);
+
+        
         if (_inputs.jump && isGrounded)
         {
 

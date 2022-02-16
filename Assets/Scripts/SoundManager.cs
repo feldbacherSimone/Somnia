@@ -9,6 +9,8 @@ public static class SoundManager
        PuzzleInteract, 
        PuzzleSolve, 
        PlayerWalk, 
+       PlayerLand,
+       PlayerJump,
        
     }
 

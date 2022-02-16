@@ -52,7 +52,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
     private float currentBlend;
     private float smoothBlendVel;
 
-    public float jumpAniticipationTime;
+    public float jumpAniticipationTime = 0.4f;
     float remainingTime;
     [SerializeField] private float deathHeight; 
 
@@ -125,22 +125,18 @@ public class ThirdPersonMovementScript : MonoBehaviour
         currentVel.y -= gravity * Time.deltaTime;
         contoller.Move(currentVel * Time.deltaTime);
 
-        
         if (_inputs.jump && isGrounded)
         {
-
-
+            remainingTime = jumpAniticipationTime; 
             isJumping = true;
-            //currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
-            Invoke("AddJumpForce", 0.15f);
-            
-            //print(currentVel);
+            Invoke("AddJumpForce", jumpAniticipationTime);
         }
         else
         {
             isJumping = false;
             _inputs.jump = false;
         }
+
         animator.SetBool("isJumping", isJumping);
         animator.SetBool("Grounded", isGrounded);
     }

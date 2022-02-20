@@ -20,7 +20,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
     [SerializeField]
     private float moveSmoothTime = 0.2f;
-    private float animationSmoothTime = 0.3f; 
+    private float animationSmoothTime = 0.3f;
+    private float centreSmoothTime;
 
     public CharacterController contoller;
     public Animator animator;
@@ -29,8 +30,10 @@ public class ThirdPersonMovementScript : MonoBehaviour
     public Transform groundCheck;
 
     public float radius;
+    public float groundMargin; 
     public LayerMask groundMask;
-    public bool isGrounded; 
+    public bool isGrounded;
+    public bool isNearGround; 
     
     public float walkSpeed = 6f;
     public float sprintSpeed = 12f; 
@@ -51,6 +54,15 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
     private float currentBlend;
     private float smoothBlendVel;
+    private float centreSmoothVel;
+
+    private float currentHeight;
+
+    [SerializeField]
+    private float jumpTimeOut = 1;
+
+    private float _jumoTimeOutDelta; 
+    [SerializeField]
 
     public float jumpAniticipationTime = 0.4f;
     float remainingTime;
@@ -59,6 +71,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _jumoTimeOutDelta = jumpTimeOut; 
         if (respawnPoint != null)
             respawnCoords = respawnPoint.position;
         else
@@ -72,6 +85,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, radius, groundMask);
+        isNearGround = Physics.CheckSphere(groundCheck.position, radius + groundMargin, groundMask);
         if(isGrounded && currentVel.y < 0)
         {
             currentVel.y = -2f;
@@ -79,6 +93,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
         Move();
         Jump();
+
+        _jumoTimeOutDelta -= Time.deltaTime;
     
     }
     private void LateUpdate()
@@ -89,6 +105,10 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
     public void AddJumpForce()
     {
+
+        centreSmoothTime = Mathf.Sqrt(jumpHeight * -2 * -gravity) / (gravity*2f);
+        currentHeight = transform.position.y;
+        StartCoroutine("AdjustMidpoint");     
         currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
     }
 
@@ -125,8 +145,9 @@ public class ThirdPersonMovementScript : MonoBehaviour
         currentVel.y -= gravity * Time.deltaTime;
         contoller.Move(currentVel * Time.deltaTime);
 
-        if (_inputs.jump && isGrounded)
+        if (_inputs.jump && isGrounded && _jumoTimeOutDelta <= 0.0f)
         {
+            _jumoTimeOutDelta = jumpTimeOut;
             remainingTime = jumpAniticipationTime; 
             isJumping = true;
             Invoke("AddJumpForce", jumpAniticipationTime);
@@ -138,9 +159,38 @@ public class ThirdPersonMovementScript : MonoBehaviour
         }
 
         animator.SetBool("isJumping", isJumping);
-        animator.SetBool("Grounded", isGrounded);
+        animator.SetBool("Grounded", isNearGround);
     }
     
-   
+   IEnumerator AdjustMidpoint()
+    {
 
+        while (transform.position.y < currentHeight + jumpHeight)
+            {
+            print("aaaaaaaaaaa");
+            contoller.center = new Vector3(contoller.center.x, Mathf.SmoothDamp(contoller.center.y, 0.45f, ref centreSmoothVel, centreSmoothTime), contoller.center.z);
+              
+            if (contoller.center.y >= 0.445f)
+            {
+                StartCoroutine("AdjustCentreBack");
+                StopCoroutine("AdjustMidpoint");
+            }
+            yield return null;
+        }
+    }
+    IEnumerator AdjustCentreBack()
+    {
+
+        while (contoller.center.y >= 0)
+        {
+            print("bbbb");
+            contoller.center = new Vector3(contoller.center.x, Mathf.SmoothDamp(contoller.center.y, 0f, ref centreSmoothVel, centreSmoothTime), contoller.center.z);
+            if (contoller.center.y <= 0.001f)
+            {
+                StopAllCoroutines();
+            }
+            yield return null;
+        }
+
+    }
 }

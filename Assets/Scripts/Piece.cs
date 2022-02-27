@@ -6,15 +6,18 @@ public class Piece: MonoBehaviour
 {
     private MeshRenderer meshRenderer;
     private Material onMat;
-    public Puzzle puzzleManager; 
+    public Puzzle puzzleManager;
+    public PuzzleLine puzzleManagerLine;
     private Material offMat;
     public bool isOn;
     public Vector3 gridCoords;
     public bool puzzleSolved = false;
-    [SerializeField] Piece sisterTile; 
+    [SerializeField] Piece sisterTile;
+    [SerializeField] private bool isLine; 
 
     private void Awake()
     {
+
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
  
         onMat = (Material)Resources.Load("Materials/OnMat");
@@ -43,7 +46,10 @@ public class Piece: MonoBehaviour
 
             isOn = isOn ? false : true;
             SwitchColors();
-            puzzleManager.SwitchStates(gridCoords);
+            if (!isLine)
+                puzzleManager.SwitchStates(gridCoords);
+            else if (isLine)
+                puzzleManagerLine.SwitchStates(gridCoords);
         } 
         if(sisterTile != null)
         {
@@ -53,6 +59,7 @@ public class Piece: MonoBehaviour
         }
      
     }
+
     public void SwitchStates()
     {
         isOn = isOn ? false : true;

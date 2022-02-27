@@ -66,7 +66,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
     public float jumpAniticipationTime = 0.4f;
     float remainingTime;
-    [SerializeField] private float deathHeight; 
+    [SerializeField] private float deathHeight;
+    [SerializeField] private float midpointHeight;
 
     // Start is called before the first frame update
     void Start()
@@ -106,7 +107,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
     public void AddJumpForce()
     {
 
-        centreSmoothTime = Mathf.Sqrt(jumpHeight * -2 * -gravity) / (gravity*2f);
+        centreSmoothTime = Mathf.Sqrt(jumpHeight * -2 * -gravity) / (gravity*2.5f);
         currentHeight = transform.position.y;
         StartCoroutine("AdjustMidpoint");     
         currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
@@ -168,9 +169,9 @@ public class ThirdPersonMovementScript : MonoBehaviour
         while (transform.position.y < currentHeight + jumpHeight)
             {
             print("aaaaaaaaaaa");
-            contoller.center = new Vector3(contoller.center.x, Mathf.SmoothDamp(contoller.center.y, 0.45f, ref centreSmoothVel, centreSmoothTime), contoller.center.z);
+            contoller.center = new Vector3(contoller.center.x, Mathf.SmoothDamp(contoller.center.y, midpointHeight, ref centreSmoothVel, centreSmoothTime), contoller.center.z);
               
-            if (contoller.center.y >= 0.445f)
+            if (contoller.center.y >= midpointHeight- 0.05f)
             {
                 StartCoroutine("AdjustCentreBack");
                 StopCoroutine("AdjustMidpoint");

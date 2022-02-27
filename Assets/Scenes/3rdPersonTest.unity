@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 5843305}
   - component: {fileID: 5843304}
   - component: {fileID: 5843308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,10 +256,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 84766211}
+  isLine: 0
 --- !u!4 &15485508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -280,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24445950}
   - component: {fileID: 24445951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '13_Puzzle   '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +362,8 @@ GameObject:
   - component: {fileID: 27315141}
   - component: {fileID: 27315140}
   - component: {fileID: 27315139}
-  m_Layer: 0
+  - component: {fileID: 27315143}
+  m_Layer: 3
   m_Name: puzzle (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,6 +446,25 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27315143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27315138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!4 &34166137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -542,7 +564,7 @@ GameObject:
   - component: {fileID: 40835101}
   - component: {fileID: 40835100}
   - component: {fileID: 40835103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,10 +660,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &42063640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,6 +1061,10 @@ PrefabInstance:
       value: Cube (19)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1329,7 +1357,7 @@ GameObject:
   - component: {fileID: 72522266}
   - component: {fileID: 72522265}
   - component: {fileID: 72522264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1700,7 +1728,7 @@ GameObject:
   - component: {fileID: 84766208}
   - component: {fileID: 84766207}
   - component: {fileID: 84766211}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1796,10 +1824,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 5843308}
+  isLine: 0
 --- !u!4 &86347797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -2250,10 +2280,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &109606362 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
@@ -2422,7 +2454,7 @@ GameObject:
   - component: {fileID: 117187156}
   - component: {fileID: 117187155}
   - component: {fileID: 117187159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2518,10 +2550,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &119441073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2633,7 +2667,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 123063080}
-  m_Layer: 0
+  - component: {fileID: 123063081}
+  m_Layer: 3
   m_Name: 9_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2663,6 +2698,36 @@ Transform:
   m_Father: {fileID: 863992893}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123063081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123063079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f639b8784689c4292909cbaa7c16b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 1580014113}
+  - {fileID: 1027261663}
+  - {fileID: 27315138}
+  - {fileID: 414104139}
+  - {fileID: 453052404}
+  - {fileID: 880239056}
+  - {fileID: 848002137}
+  - {fileID: 1950172237}
+  - {fileID: 713341571}
+  width: 1
+  height: 1
+  depth: 1
+  initTile: {fileID: 0}
+  coord: {x: 0, y: 0, z: 0}
+  distance: 0
+  vecDistance: {x: 0, y: 0, z: 0}
+  solved: 0
 --- !u!4 &128351685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
@@ -2816,6 +2881,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &131284785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 129472829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &131284786
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131284785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &133907056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3144,7 +3228,7 @@ GameObject:
   - component: {fileID: 157016428}
   - component: {fileID: 157016427}
   - component: {fileID: 157016426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3316,7 +3400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159462650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 9.04, z: -112.3}
+  m_LocalPosition: {x: -0.9, y: 26.8, z: -112.3}
   m_LocalScale: {x: 15.703303, y: 18.387484, z: 0.65865564}
   m_Children: []
   m_Father: {fileID: 435877769}
@@ -4079,10 +4163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &214414825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4452,6 +4538,10 @@ PrefabInstance:
       value: Cube (60)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4593,7 +4683,7 @@ GameObject:
   - component: {fileID: 235667746}
   - component: {fileID: 235667745}
   - component: {fileID: 235667744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4774,7 +4864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &239982472
 Transform:
   m_ObjectHideFlags: 0
@@ -4937,10 +5027,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &256588589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5759,10 +5851,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &276845772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -5786,10 +5880,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &278603322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5863,6 +5959,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &282593388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1004704991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &282593389
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282593388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &283346524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
@@ -6147,7 +6262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289956081}
   - component: {fileID: 289956082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 5_puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6466,7 +6581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 328127307}
   - component: {fileID: 328127308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 14_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6931,7 +7046,7 @@ GameObject:
   - component: {fileID: 347181327}
   - component: {fileID: 347181326}
   - component: {fileID: 347181330}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7027,10 +7142,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 881009132}
+  isLine: 0
 --- !u!1001 &347461832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7122,10 +7239,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &353652705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6342590819009798481, guid: 61bca8ecebef68749b157273da2ff4bf, type: 3}
@@ -7295,7 +7414,7 @@ GameObject:
   - component: {fileID: 362235372}
   - component: {fileID: 362235371}
   - component: {fileID: 362235374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7391,10 +7510,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &363401035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7461,6 +7582,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7781,7 +7906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391504415}
   - component: {fileID: 391504416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 6_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8145,6 +8270,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &401700853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1884203169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &401700854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401700853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &406014657
 GameObject:
   m_ObjectHideFlags: 0
@@ -8573,7 +8717,8 @@ GameObject:
   - component: {fileID: 414104142}
   - component: {fileID: 414104141}
   - component: {fileID: 414104140}
-  m_Layer: 0
+  - component: {fileID: 414104144}
+  m_Layer: 3
   m_Name: puzzle (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8656,6 +8801,25 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &414104144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414104139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!4 &417490207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -8757,7 +8921,7 @@ GameObject:
   - component: {fileID: 419462910}
   - component: {fileID: 419462909}
   - component: {fileID: 419462912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (94)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8853,10 +9017,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &420316907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -8879,7 +9045,7 @@ GameObject:
   - component: {fileID: 423367686}
   - component: {fileID: 423367685}
   - component: {fileID: 423367684}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9050,7 +9216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424986528}
   - component: {fileID: 424986529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 2_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9670,7 +9836,7 @@ GameObject:
   - component: {fileID: 449627093}
   - component: {fileID: 449627092}
   - component: {fileID: 449627095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9766,10 +9932,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &452897907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
@@ -9788,10 +9956,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &453032445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -9882,7 +10052,8 @@ GameObject:
   - component: {fileID: 453052407}
   - component: {fileID: 453052406}
   - component: {fileID: 453052405}
-  m_Layer: 0
+  - component: {fileID: 453052409}
+  m_Layer: 3
   m_Name: puzzle (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9965,6 +10136,25 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &453052409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453052404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!1 &454448871
 GameObject:
   m_ObjectHideFlags: 0
@@ -9978,7 +10168,7 @@ GameObject:
   - component: {fileID: 454448874}
   - component: {fileID: 454448873}
   - component: {fileID: 454448876}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10074,10 +10264,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &455074873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3797538120708024515, guid: 6dcfc10a6f5d0e541addee8d23e4aeb9, type: 3}
@@ -10149,6 +10341,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10274,6 +10470,44 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469777434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &471780858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 563158972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &471780859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471780858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &472069975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1175968109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &472069976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472069975}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -10454,6 +10688,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 1991513980}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &483253113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1693285271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &483253114
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483253113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &485597330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10850,6 +11103,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &491334293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1758375035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &491334294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491334293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &493530784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10946,10 +11218,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &511220674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -11059,7 +11333,7 @@ GameObject:
   - component: {fileID: 517169515}
   - component: {fileID: 517169514}
   - component: {fileID: 517169513}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11251,7 +11525,7 @@ GameObject:
   - component: {fileID: 524749599}
   - component: {fileID: 524749598}
   - component: {fileID: 524749597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11412,6 +11686,10 @@ PrefabInstance:
       value: Cube (57)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11537,7 +11815,7 @@ GameObject:
   - component: {fileID: 544687198}
   - component: {fileID: 544687197}
   - component: {fileID: 544687196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11871,7 +12149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 547244681}
   - component: {fileID: 547244682}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 16_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12292,6 +12570,25 @@ Transform:
   m_Father: {fileID: 1145884147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &566053998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1004572290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &566053999
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566053998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &576504619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12388,10 +12685,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &589120323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12575,7 +12874,7 @@ GameObject:
   - component: {fileID: 603780463}
   - component: {fileID: 603780462}
   - component: {fileID: 603780466}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12671,10 +12970,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &603927342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -12717,10 +13018,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &605953397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -12739,7 +13042,7 @@ GameObject:
   - component: {fileID: 606727849}
   - component: {fileID: 606727848}
   - component: {fileID: 606727851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (95)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12835,10 +13138,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &607761861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12925,7 +13230,7 @@ GameObject:
   - component: {fileID: 607771345}
   - component: {fileID: 607771344}
   - component: {fileID: 607771348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13021,10 +13326,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 914291681}
+  isLine: 0
 --- !u!1 &608939359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -13549,6 +13856,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &640270135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1742464049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &640270136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640270135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &642341079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -13762,7 +14088,7 @@ GameObject:
   - component: {fileID: 646046232}
   - component: {fileID: 646046231}
   - component: {fileID: 646046234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13858,10 +14184,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &646429927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14048,7 +14376,7 @@ GameObject:
   - component: {fileID: 656169327}
   - component: {fileID: 656169326}
   - component: {fileID: 656169325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14522,7 +14850,7 @@ GameObject:
   - component: {fileID: 676812999}
   - component: {fileID: 676812998}
   - component: {fileID: 676812997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14556,10 +14884,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!65 &676812998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15015,6 +15345,10 @@ PrefabInstance:
       value: Cube (9)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15129,6 +15463,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
   m_PrefabInstance: {fileID: 2044590135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &703478409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 930190595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &703478410
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703478409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -15307,7 +15660,7 @@ GameObject:
   - component: {fileID: 711452670}
   - component: {fileID: 711452669}
   - component: {fileID: 711452668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15402,7 +15755,8 @@ GameObject:
   - component: {fileID: 713341575}
   - component: {fileID: 713341574}
   - component: {fileID: 713341573}
-  m_Layer: 0
+  - component: {fileID: 713341576}
+  m_Layer: 3
   m_Name: puzzle (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15485,6 +15839,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713341571}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &713341576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713341571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!1001 &713435544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15579,19 +15952,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9988616
+      value: 0.9987909
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.031302355
+      value: -0.031299487
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.03577708
+      value: 0.037674464
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.003965265
+      value: 0.004193456
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_BindingMode
@@ -15599,11 +15972,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.75868
+      value: -0.8887323
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.223424
+      value: -9.185662
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -15671,11 +16044,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.75868
+      value: -0.8887323
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.223424
+      value: -9.185662
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -15703,15 +16076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.09824556
+      value: -0.09824553
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0037781547
+      value: 0.0037781696
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0003729973
+      value: 0.00037299574
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15727,19 +16100,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99904877
+      value: 0.9990392
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.043416526
+      value: -0.04341543
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.004076302
+      value: 0.0059720892
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00020239525
+      value: 0.0004536619
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571832, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Name
@@ -15775,19 +16148,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.113380715
+      value: 0.11526103
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.016275939
+      value: -0.016545856
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9833382
+      value: 0.98311955
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.14115934
+      value: 0.14112799
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15807,11 +16180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.75868
+      value: -0.8887323
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.223424
+      value: -9.185662
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -16311,7 +16684,7 @@ GameObject:
   - component: {fileID: 738369326}
   - component: {fileID: 738369325}
   - component: {fileID: 738369324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16465,6 +16838,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17159,6 +17536,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 442303343}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &771238657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1784517426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &771238658
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771238657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &771376893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17270,10 +17666,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &786534772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -17292,7 +17690,7 @@ GameObject:
   - component: {fileID: 787529585}
   - component: {fileID: 787529584}
   - component: {fileID: 787529587}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17388,10 +17786,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &790467169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17564,7 +17964,7 @@ GameObject:
   - component: {fileID: 800580753}
   - component: {fileID: 800580752}
   - component: {fileID: 800580751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17660,7 +18060,7 @@ GameObject:
   - component: {fileID: 800917616}
   - component: {fileID: 800917615}
   - component: {fileID: 800917618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17756,10 +18156,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &801358497
 GameObject:
   m_ObjectHideFlags: 0
@@ -17772,7 +18174,7 @@ GameObject:
   - component: {fileID: 801358500}
   - component: {fileID: 801358499}
   - component: {fileID: 801358498}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18212,7 +18614,7 @@ GameObject:
   - component: {fileID: 827280245}
   - component: {fileID: 827280244}
   - component: {fileID: 827280243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18363,6 +18765,10 @@ PrefabInstance:
       value: Cube (16)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18477,7 +18883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842280796}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 10_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18538,7 +18944,8 @@ GameObject:
   - component: {fileID: 848002140}
   - component: {fileID: 848002139}
   - component: {fileID: 848002138}
-  m_Layer: 0
+  - component: {fileID: 848002142}
+  m_Layer: 3
   m_Name: puzzle (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18621,6 +19028,25 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848002142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848002137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!1001 &848374519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18884,7 +19310,7 @@ GameObject:
   - component: {fileID: 863787973}
   - component: {fileID: 863787972}
   - component: {fileID: 863787975}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18980,10 +19406,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &863992892
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,7 +19626,7 @@ GameObject:
   - component: {fileID: 872622928}
   - component: {fileID: 872622927}
   - component: {fileID: 872622926}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19291,7 +19719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876657592}
   - component: {fileID: 876657593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 4_puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19353,7 +19781,8 @@ GameObject:
   - component: {fileID: 880239059}
   - component: {fileID: 880239058}
   - component: {fileID: 880239057}
-  m_Layer: 0
+  - component: {fileID: 880239061}
+  m_Layer: 3
   m_Name: puzzle (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19436,6 +19865,44 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880239061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880239056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
+--- !u!1 &880998838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 149929388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &880998839
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880998838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &881009127
 GameObject:
   m_ObjectHideFlags: 0
@@ -19449,7 +19916,7 @@ GameObject:
   - component: {fileID: 881009129}
   - component: {fileID: 881009128}
   - component: {fileID: 881009132}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19545,10 +20012,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 347181330}
+  isLine: 0
 --- !u!4 &882558076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -19567,7 +20036,7 @@ GameObject:
   - component: {fileID: 882753706}
   - component: {fileID: 882753705}
   - component: {fileID: 882753709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19663,10 +20132,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
+--- !u!1 &884361905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 891420939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &884361906
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884361905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &888882561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19829,7 +20319,7 @@ GameObject:
   - component: {fileID: 898249924}
   - component: {fileID: 898249923}
   - component: {fileID: 898249922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20013,7 +20503,7 @@ GameObject:
   - component: {fileID: 910449314}
   - component: {fileID: 910449313}
   - component: {fileID: 910449317}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20109,10 +20599,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &911357060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20186,6 +20678,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &912356511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 808732289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &912356512
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912356511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &914095930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20272,7 +20783,7 @@ GameObject:
   - component: {fileID: 914291678}
   - component: {fileID: 914291677}
   - component: {fileID: 914291681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20368,10 +20879,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 607771348}
+  isLine: 0
 --- !u!1001 &916903806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20601,7 +21114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919230611}
   - component: {fileID: 919230612}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '11_Puzzle '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20670,10 +21183,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &920920105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20747,6 +21262,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &923825754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 662462016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &923825755
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923825754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &930190595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21387,10 +21921,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &966853268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21530,6 +22066,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21757,7 +22297,7 @@ GameObject:
   - component: {fileID: 986456040}
   - component: {fileID: 986456039}
   - component: {fileID: 986456043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21853,10 +22393,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 1485213176}
+  isLine: 0
 --- !u!1001 &986589638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22194,7 +22736,7 @@ GameObject:
   - component: {fileID: 992310030}
   - component: {fileID: 992310029}
   - component: {fileID: 992310028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22634,7 +23176,7 @@ GameObject:
   - component: {fileID: 1014489050}
   - component: {fileID: 1014489049}
   - component: {fileID: 1014489052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22730,10 +23272,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &1014940569
 GameObject:
   m_ObjectHideFlags: 0
@@ -22747,7 +23291,7 @@ GameObject:
   - component: {fileID: 1014940572}
   - component: {fileID: 1014940571}
   - component: {fileID: 1014940574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22843,10 +23387,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &1015027207
 GameObject:
   m_ObjectHideFlags: 0
@@ -22857,7 +23403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015027208}
   - component: {fileID: 1015027209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '12_Puzzle  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23003,6 +23549,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
   m_PrefabInstance: {fileID: 314262829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1018943708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1749964622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1018943709
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018943708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &1019395485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23149,6 +23714,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1020313939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 486207987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1020313940
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020313939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1021428002 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -23167,7 +23751,7 @@ GameObject:
   - component: {fileID: 1022132737}
   - component: {fileID: 1022132736}
   - component: {fileID: 1022132735}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23201,10 +23785,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!65 &1022132736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23357,7 +23943,8 @@ GameObject:
   - component: {fileID: 1027261667}
   - component: {fileID: 1027261666}
   - component: {fileID: 1027261665}
-  m_Layer: 0
+  - component: {fileID: 1027261668}
+  m_Layer: 3
   m_Name: puzzle (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23440,6 +24027,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027261663}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1027261668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027261663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!4 &1028429956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -23641,7 +24247,7 @@ GameObject:
   - component: {fileID: 1045406811}
   - component: {fileID: 1045406810}
   - component: {fileID: 1045406814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23737,10 +24343,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1047380799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23910,10 +24518,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1056507154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -24184,7 +24794,7 @@ GameObject:
   - component: {fileID: 1092419797}
   - component: {fileID: 1092419796}
   - component: {fileID: 1092419799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24280,10 +24890,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1093926828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25068,6 +25680,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 1283813549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1150449164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 485597330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1150449165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150449164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1150671409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -25238,7 +25869,7 @@ GameObject:
   - component: {fileID: 1155511843}
   - component: {fileID: 1155511847}
   - component: {fileID: 1155511848}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25356,10 +25987,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1161345003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25451,7 +26084,7 @@ GameObject:
   - component: {fileID: 1162255576}
   - component: {fileID: 1162255575}
   - component: {fileID: 1162255578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (96)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25547,10 +26180,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1162478128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -25889,7 +26524,7 @@ GameObject:
   - component: {fileID: 1185456867}
   - component: {fileID: 1185456866}
   - component: {fileID: 1185456865}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26132,11 +26767,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 487588343}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1200134911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1398228711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1200134912
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200134911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1201418784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 265291795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1211658050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 371684262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1211658051
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211658050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &1213240691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5434598083113479543, guid: 61bca8ecebef68749b157273da2ff4bf, type: 3}
@@ -26219,6 +26892,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
+--- !u!1 &1215867709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1751110253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1215867710
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215867709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1217709087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -26796,7 +27488,7 @@ GameObject:
   - component: {fileID: 1245382860}
   - component: {fileID: 1245382859}
   - component: {fileID: 1245382858}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26995,7 +27687,7 @@ GameObject:
   - component: {fileID: 1269840744}
   - component: {fileID: 1269840743}
   - component: {fileID: 1269840746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27091,10 +27783,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &1271897340
 GameObject:
   m_ObjectHideFlags: 0
@@ -27105,7 +27799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271897341}
   - component: {fileID: 1271897342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 3_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27434,10 +28128,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1313232482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -28318,7 +29014,7 @@ GameObject:
   - component: {fileID: 1351769723}
   - component: {fileID: 1351769722}
   - component: {fileID: 1351769721}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28496,7 +29192,7 @@ GameObject:
   - component: {fileID: 1356572577}
   - component: {fileID: 1356572576}
   - component: {fileID: 1356572579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (97)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28592,10 +29288,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1356667188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28900,7 +29598,7 @@ GameObject:
   - component: {fileID: 1361622521}
   - component: {fileID: 1361622520}
   - component: {fileID: 1361622519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29302,7 +30000,7 @@ GameObject:
   - component: {fileID: 1373277507}
   - component: {fileID: 1373277506}
   - component: {fileID: 1373277509}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29398,10 +30096,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1373980509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 166554528913833732, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
@@ -29502,7 +30202,7 @@ GameObject:
   - component: {fileID: 1390442299}
   - component: {fileID: 1390442298}
   - component: {fileID: 1390442297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30636,7 +31336,7 @@ GameObject:
   - component: {fileID: 1434734970}
   - component: {fileID: 1434734969}
   - component: {fileID: 1434734968}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30785,6 +31485,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31237,6 +31941,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31880,7 +32588,7 @@ GameObject:
   - component: {fileID: 1485213173}
   - component: {fileID: 1485213172}
   - component: {fileID: 1485213176}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31976,10 +32684,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 986456043}
+  isLine: 0
+--- !u!1 &1490142761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1653835731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1490142762
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490142761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1491968021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 48005979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1491968022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491968021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1492611670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -32643,6 +33391,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1532494333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1093926828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1532494334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532494333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &1532705137
 GameObject:
   m_ObjectHideFlags: 0
@@ -32786,7 +33553,7 @@ GameObject:
   - component: {fileID: 1534774873}
   - component: {fileID: 1534774875}
   - component: {fileID: 1534774874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '8_Puzzle '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32892,7 +33659,7 @@ GameObject:
   - component: {fileID: 1541641172}
   - component: {fileID: 1541641171}
   - component: {fileID: 1541641170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33340,7 +34107,7 @@ GameObject:
   - component: {fileID: 1555282009}
   - component: {fileID: 1555282008}
   - component: {fileID: 1555282007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33625,7 +34392,7 @@ GameObject:
   - component: {fileID: 1570040172}
   - component: {fileID: 1570040171}
   - component: {fileID: 1570040170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33735,7 +34502,8 @@ GameObject:
   - component: {fileID: 1580014117}
   - component: {fileID: 1580014116}
   - component: {fileID: 1580014115}
-  m_Layer: 0
+  - component: {fileID: 1580014118}
+  m_Layer: 3
   m_Name: puzzle (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33818,6 +34586,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580014113}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1580014118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580014113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!1001 &1580410571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34206,6 +34993,10 @@ PrefabInstance:
       value: Cube (10)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -34287,6 +35078,10 @@ PrefabInstance:
       value: Cube (54)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -34305,6 +35100,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 166554528913833732, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
   m_PrefabInstance: {fileID: 1603750121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1603876522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1817516746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1603876523
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603876522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &1605133659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34479,10 +35293,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
+--- !u!1 &1617901135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1866635723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1617901136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617901135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1620075346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -34652,7 +35487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1625606013}
   - component: {fileID: 1625606014}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 17_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34894,7 +35729,7 @@ GameObject:
   - component: {fileID: 1648826855}
   - component: {fileID: 1648826854}
   - component: {fileID: 1648826853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34994,7 +35829,7 @@ GameObject:
   - component: {fileID: 1652464617}
   - component: {fileID: 1652464616}
   - component: {fileID: 1652464615}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35320,6 +36155,10 @@ PrefabInstance:
       value: Cube (6)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -35424,7 +36263,7 @@ GameObject:
   - component: {fileID: 1671878438}
   - component: {fileID: 1671878437}
   - component: {fileID: 1671878441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35520,10 +36359,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &1675500199
 GameObject:
   m_ObjectHideFlags: 0
@@ -35536,7 +36377,7 @@ GameObject:
   - component: {fileID: 1675500203}
   - component: {fileID: 1675500202}
   - component: {fileID: 1675500201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36146,6 +36987,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1707555031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 365327496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1707555032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707555031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1709347601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
@@ -36486,7 +37346,7 @@ GameObject:
   - component: {fileID: 1727369251}
   - component: {fileID: 1727369250}
   - component: {fileID: 1727369253}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (98)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36582,10 +37442,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1730635495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37056,6 +37918,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1741244760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1500427010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1741244761
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741244760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &1742464049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37223,7 +38104,7 @@ GameObject:
   - component: {fileID: 1747665488}
   - component: {fileID: 1747665487}
   - component: {fileID: 1747665486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38109,6 +38990,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1775239410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1003539213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1775239411
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775239410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &1777550370
 GameObject:
   m_ObjectHideFlags: 0
@@ -38119,7 +39019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777550371}
   - component: {fileID: 1777550372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '7_Puzzle '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38271,7 +39171,7 @@ GameObject:
   - component: {fileID: 1781167200}
   - component: {fileID: 1781167199}
   - component: {fileID: 1781167203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: block_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38367,10 +39267,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1781763332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38595,6 +39497,10 @@ PrefabInstance:
       value: Cube (7)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -38776,7 +39682,7 @@ GameObject:
   - component: {fileID: 1797729689}
   - component: {fileID: 1797729688}
   - component: {fileID: 1797729691}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38872,10 +39778,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1798625484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -39068,7 +39976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809660526}
   - component: {fileID: 1809660527}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 15_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39290,6 +40198,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 175785112}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1825304380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1721578402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1825304381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825304380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1826887746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
@@ -39390,7 +40317,7 @@ GameObject:
   - component: {fileID: 1835834718}
   - component: {fileID: 1835834717}
   - component: {fileID: 1835834720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39486,10 +40413,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1837773168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39781,7 +40710,7 @@ GameObject:
   - component: {fileID: 1855526959}
   - component: {fileID: 1855526958}
   - component: {fileID: 1855526957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40356,6 +41285,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+--- !u!1 &1869541996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 393874608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1869541997
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869541996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1870453780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -41186,6 +42134,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 790467169}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1920995313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1283813549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1920995314
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920995313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &1921858003
 GameObject:
   m_ObjectHideFlags: 0
@@ -41628,7 +42595,8 @@ GameObject:
   - component: {fileID: 1950172240}
   - component: {fileID: 1950172239}
   - component: {fileID: 1950172238}
-  m_Layer: 0
+  - component: {fileID: 1950172242}
+  m_Layer: 3
   m_Name: puzzle (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41711,6 +42679,25 @@ Transform:
   m_Father: {fileID: 123063080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950172242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950172237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 1
 --- !u!4 &1950545610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
@@ -41794,6 +42781,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 1531543136}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1957637010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 214414825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1957637011
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957637010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!4 &1960210916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -41897,6 +42903,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 1739024609}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971195171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1553016653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1971195172
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971195171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &1972516945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42302,15 +43327,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1983159200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 683549858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983399276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1899646870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1983399277
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983399276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &1989315898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42620,7 +43666,7 @@ GameObject:
   - component: {fileID: 1993497321}
   - component: {fileID: 1993497320}
   - component: {fileID: 1993497323}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42716,10 +43762,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1998268437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -42930,6 +43978,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
   m_PrefabInstance: {fileID: 1554412858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2018935777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1548405573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2018935778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018935777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1001 &2021879263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44010,10 +45077,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &2074799780
 GameObject:
   m_ObjectHideFlags: 0
@@ -44248,6 +45317,10 @@ PrefabInstance:
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_Name
       value: Cube (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44550,6 +45623,10 @@ PrefabInstance:
       value: Cube (15)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -44575,7 +45652,7 @@ GameObject:
   - component: {fileID: 2113562362}
   - component: {fileID: 2113562361}
   - component: {fileID: 2113562360}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: puzzle (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45027,6 +46104,10 @@ PrefabInstance:
       value: Cube (53)
       objectReference: {fileID: 0}
     - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 820675186586065276, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -45242,6 +46323,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 166554528913833732, guid: 31277533aeec1ce488f6017e0e81109e, type: 3}
   m_PrefabInstance: {fileID: 2133461882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2135642581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
+  m_PrefabInstance: {fileID: 1041046231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2135642582
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135642581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
 --- !u!1 &2136118203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -47066,7 +48166,7 @@ GameObject:
   - component: {fileID: 3102321455528281151}
   - component: {fileID: 8230848060417062038}
   - component: {fileID: 820675184816911317}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47086,10 +48186,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675184932616873
 GameObject:
   m_ObjectHideFlags: 0
@@ -47103,7 +48205,7 @@ GameObject:
   - component: {fileID: 3102321455342914882}
   - component: {fileID: 8230848060297625067}
   - component: {fileID: 820675184932616874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47123,10 +48225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675184970180483
 GameObject:
   m_ObjectHideFlags: 0
@@ -47140,7 +48244,7 @@ GameObject:
   - component: {fileID: 3102321455280115816}
   - component: {fileID: 8230848060385812673}
   - component: {fileID: 820675184970180484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47160,10 +48264,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185034978453
 GameObject:
   m_ObjectHideFlags: 0
@@ -47177,7 +48283,7 @@ GameObject:
   - component: {fileID: 3102321455310279550}
   - component: {fileID: 8230848060333138903}
   - component: {fileID: 820675185034978454}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47197,10 +48303,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185096651974
 GameObject:
   m_ObjectHideFlags: 0
@@ -47214,7 +48322,7 @@ GameObject:
   - component: {fileID: 3102321455774466861}
   - component: {fileID: 8230848060126376836}
   - component: {fileID: 820675185096651975}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47234,10 +48342,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185157539490
 GameObject:
   m_ObjectHideFlags: 0
@@ -47289,7 +48399,7 @@ GameObject:
   - component: {fileID: 3102321455662527570}
   - component: {fileID: 8230848060014413051}
   - component: {fileID: 820675185219535802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47309,10 +48419,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185239066478
 GameObject:
   m_ObjectHideFlags: 0
@@ -47326,7 +48438,7 @@ GameObject:
   - component: {fileID: 3102321455548625029}
   - component: {fileID: 8230848060117565484}
   - component: {fileID: 820675185239066479}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47346,10 +48458,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185254601169
 GameObject:
   m_ObjectHideFlags: 0
@@ -47363,7 +48477,7 @@ GameObject:
   - component: {fileID: 3102321455535187514}
   - component: {fileID: 8230848060104005267}
   - component: {fileID: 820675185254601170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47383,10 +48497,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185282257035
 GameObject:
   m_ObjectHideFlags: 0
@@ -47400,7 +48516,7 @@ GameObject:
   - component: {fileID: 3102321455590893408}
   - component: {fileID: 8230848060076873673}
   - component: {fileID: 820675185282257036}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47420,10 +48536,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185302281664
 GameObject:
   m_ObjectHideFlags: 0
@@ -47437,7 +48555,7 @@ GameObject:
   - component: {fileID: 3102321455577229867}
   - component: {fileID: 8230848060063341186}
   - component: {fileID: 820675185302281665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47457,10 +48575,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185323193426
 GameObject:
   m_ObjectHideFlags: 0
@@ -47474,7 +48594,7 @@ GameObject:
   - component: {fileID: 3102321456000910265}
   - component: {fileID: 8230848059899704080}
   - component: {fileID: 820675185323193427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47494,10 +48614,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185376963850
 GameObject:
   m_ObjectHideFlags: 0
@@ -47530,7 +48652,7 @@ GameObject:
   - component: {fileID: 3102321455918466068}
   - component: {fileID: 8230848059750151357}
   - component: {fileID: 820675185475367936}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47550,10 +48672,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185492492193
 GameObject:
   m_ObjectHideFlags: 0
@@ -47567,7 +48691,7 @@ GameObject:
   - component: {fileID: 3102321455907113034}
   - component: {fileID: 8230848059737880803}
   - component: {fileID: 820675185492492194}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47587,10 +48711,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185499127394
 GameObject:
   m_ObjectHideFlags: 0
@@ -47604,7 +48730,7 @@ GameObject:
   - component: {fileID: 3102321455909325193}
   - component: {fileID: 8230848059723315488}
   - component: {fileID: 820675185499127395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47624,10 +48750,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185550639664
 GameObject:
   m_ObjectHideFlags: 0
@@ -47641,7 +48769,7 @@ GameObject:
   - component: {fileID: 3102321455859381723}
   - component: {fileID: 8230848059808613746}
   - component: {fileID: 820675185550639665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47661,10 +48789,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185566880247
 GameObject:
   m_ObjectHideFlags: 0
@@ -47678,7 +48808,7 @@ GameObject:
   - component: {fileID: 3102321455843141148}
   - component: {fileID: 8230848059791333045}
   - component: {fileID: 820675185566880248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47698,10 +48828,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185675542780
 GameObject:
   m_ObjectHideFlags: 0
@@ -47715,7 +48847,7 @@ GameObject:
   - component: {fileID: 3102321456252475159}
   - component: {fileID: 8230848059681630142}
   - component: {fileID: 820675185675542781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47735,10 +48867,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185697834269
 GameObject:
   m_ObjectHideFlags: 0
@@ -47752,7 +48886,7 @@ GameObject:
   - component: {fileID: 3102321456241193718}
   - component: {fileID: 8230848059670331999}
   - component: {fileID: 820675185697834270}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47772,10 +48906,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185756902553
 GameObject:
   m_ObjectHideFlags: 0
@@ -47789,7 +48925,7 @@ GameObject:
   - component: {fileID: 3102321456171705202}
   - component: {fileID: 8230848059465454555}
   - component: {fileID: 820675185756902554}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47809,10 +48945,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185842668129
 GameObject:
   m_ObjectHideFlags: 0
@@ -47826,7 +48964,7 @@ GameObject:
   - component: {fileID: 3102321454407628170}
   - component: {fileID: 8230848061526705443}
   - component: {fileID: 820675185842668130}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47846,10 +48984,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185877984282
 GameObject:
   m_ObjectHideFlags: 0
@@ -47863,7 +49003,7 @@ GameObject:
   - component: {fileID: 3102321454442042353}
   - component: {fileID: 8230848061494944600}
   - component: {fileID: 820675185877984283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47883,10 +49023,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185878401885
 GameObject:
   m_ObjectHideFlags: 0
@@ -47900,7 +49042,7 @@ GameObject:
   - component: {fileID: 3102321454447457462}
   - component: {fileID: 8230848061499294751}
   - component: {fileID: 820675185878401886}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47920,10 +49062,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185891496282
 GameObject:
   m_ObjectHideFlags: 0
@@ -47937,7 +49081,7 @@ GameObject:
   - component: {fileID: 3102321454425908913}
   - component: {fileID: 8230848061478802968}
   - component: {fileID: 820675185891496283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47957,10 +49101,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185924196001
 GameObject:
   m_ObjectHideFlags: 0
@@ -47974,7 +49120,7 @@ GameObject:
   - component: {fileID: 3102321454353887562}
   - component: {fileID: 8230848061591454179}
   - component: {fileID: 820675185924196002}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47994,10 +49140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675185978120830
 GameObject:
   m_ObjectHideFlags: 0
@@ -48011,7 +49159,7 @@ GameObject:
   - component: {fileID: 3102321454274801045}
   - component: {fileID: 8230848061393755452}
   - component: {fileID: 820675185978120831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48031,10 +49179,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186020327097
 GameObject:
   m_ObjectHideFlags: 0
@@ -48048,7 +49198,7 @@ GameObject:
   - component: {fileID: 3102321454315956562}
   - component: {fileID: 8230848061352073723}
   - component: {fileID: 820675186020327098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48068,10 +49218,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186062459982
 GameObject:
   m_ObjectHideFlags: 0
@@ -48085,7 +49237,7 @@ GameObject:
   - component: {fileID: 3102321454189933477}
   - component: {fileID: 8230848061444277004}
   - component: {fileID: 820675186062459983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48105,10 +49257,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186089843146
 GameObject:
   m_ObjectHideFlags: 0
@@ -48122,7 +49276,7 @@ GameObject:
   - component: {fileID: 3102321454255418913}
   - component: {fileID: 8230848061425753736}
   - component: {fileID: 820675186089843147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48142,10 +49296,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186150849582
 GameObject:
   m_ObjectHideFlags: 0
@@ -48159,7 +49315,7 @@ GameObject:
   - component: {fileID: 3102321454714506181}
   - component: {fileID: 8230848061230676844}
   - component: {fileID: 820675186150849583}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48179,10 +49335,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186154575968
 GameObject:
   m_ObjectHideFlags: 0
@@ -48196,7 +49354,7 @@ GameObject:
   - component: {fileID: 3102321454718644107}
   - component: {fileID: 8230848061217890082}
   - component: {fileID: 820675186154575969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48216,10 +49374,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186167729792
 GameObject:
   m_ObjectHideFlags: 0
@@ -48233,7 +49393,7 @@ GameObject:
   - component: {fileID: 3102321454703327595}
   - component: {fileID: 8230848061201648066}
   - component: {fileID: 820675186167729793}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48253,10 +49413,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186186536123
 GameObject:
   m_ObjectHideFlags: 0
@@ -48270,7 +49432,7 @@ GameObject:
   - component: {fileID: 3102321454617408336}
   - component: {fileID: 8230848061316924409}
   - component: {fileID: 820675186186536124}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48290,10 +49452,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186242165404
 GameObject:
   m_ObjectHideFlags: 0
@@ -48307,7 +49471,7 @@ GameObject:
   - component: {fileID: 3102321454639377783}
   - component: {fileID: 8230848061271924190}
   - component: {fileID: 820675186242165405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48327,10 +49491,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186323853090
 GameObject:
   m_ObjectHideFlags: 0
@@ -48344,7 +49510,7 @@ GameObject:
   - component: {fileID: 3102321454489073865}
   - component: {fileID: 8230848061189769312}
   - component: {fileID: 820675186323853091}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48364,10 +49530,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186360006107
 GameObject:
   m_ObjectHideFlags: 0
@@ -48381,7 +49549,7 @@ GameObject:
   - component: {fileID: 3102321454522057264}
   - component: {fileID: 8230848061154620057}
   - component: {fileID: 820675186360006108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48401,10 +49569,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186370114475
 GameObject:
   m_ObjectHideFlags: 0
@@ -48418,7 +49588,7 @@ GameObject:
   - component: {fileID: 3102321454503035968}
   - component: {fileID: 8230848061135598825}
   - component: {fileID: 820675186370114476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48438,10 +49608,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186397357095
 GameObject:
   m_ObjectHideFlags: 0
@@ -48455,7 +49627,7 @@ GameObject:
   - component: {fileID: 3102321454928778188}
   - component: {fileID: 8230848060974130021}
   - component: {fileID: 820675186397357096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48475,10 +49647,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186400762937
 GameObject:
   m_ObjectHideFlags: 0
@@ -48492,7 +49666,7 @@ GameObject:
   - component: {fileID: 3102321454932192210}
   - component: {fileID: 8230848060977535867}
   - component: {fileID: 820675186400762938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48512,10 +49686,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186502709905
 GameObject:
   m_ObjectHideFlags: 0
@@ -48529,7 +49705,7 @@ GameObject:
   - component: {fileID: 3102321454898988410}
   - component: {fileID: 8230848061012374995}
   - component: {fileID: 820675186502709906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48549,10 +49725,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186596257186
 GameObject:
   m_ObjectHideFlags: 0
@@ -48566,7 +49744,7 @@ GameObject:
   - component: {fileID: 3102321454728309321}
   - component: {fileID: 8230848060908788448}
   - component: {fileID: 820675186596257187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48586,10 +49764,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 1
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186654186928
 GameObject:
   m_ObjectHideFlags: 0
@@ -48603,7 +49783,7 @@ GameObject:
   - component: {fileID: 3102321455223503451}
   - component: {fileID: 8230848060715059954}
   - component: {fileID: 820675186654186929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48623,10 +49803,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &820675186719686287
 GameObject:
   m_ObjectHideFlags: 0
@@ -48640,7 +49822,7 @@ GameObject:
   - component: {fileID: 3102321455150139748}
   - component: {fileID: 8230848060792846797}
   - component: {fileID: 820675186719686288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48660,10 +49842,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
   isOn: 0
   gridCoords: {x: 0, y: 0, z: 0}
   puzzleSolved: 0
   sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &861314640288506392
 GameObject:
   m_ObjectHideFlags: 0
@@ -57027,8 +58211,8 @@ MonoBehaviour:
   animator: {fileID: 7003334611013281363}
   cam: {fileID: 2095586788}
   groundCheck: {fileID: 7003334610473254824}
-  radius: 0.09
-  groundMargin: 0.2
+  radius: 0.27
+  groundMargin: 0.53
   groundMask:
     serializedVersion: 2
     m_Bits: 8
@@ -57036,13 +58220,14 @@ MonoBehaviour:
   isNearGround: 1
   walkSpeed: 6
   sprintSpeed: 12
-  jumpHeight: 0.77
+  jumpHeight: 1.49
   turnSmoothTime: 0.1
-  currentVel: {x: 0, y: -2.226329, z: 0}
+  currentVel: {x: 0, y: -2.170495, z: 0}
   gravity: 11.03
   jumpTimeOut: 1.19
-  jumpAniticipationTime: 0.3
+  jumpAniticipationTime: 0.18
   deathHeight: -50
+  midpointHeight: 1.21
 --- !u!143 &7003334611100741379
 CharacterController:
   m_ObjectHideFlags: 0

@@ -17,9 +17,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.11948788
-  m_TransitionOffset: 0.2669032
-  m_ExitTime: 0.108251356
+  m_TransitionDuration: 0.06831828
+  m_TransitionOffset: 0.32877186
+  m_ExitTime: 0.13426979
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -308,7 +308,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Armature|Airtime
-  m_Speed: 0.34
+  m_Speed: 0.01
   m_CycleOffset: 0.97
   m_Transitions:
   - {fileID: 600136687411711769}

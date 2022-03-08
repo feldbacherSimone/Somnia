@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuzzleLine : MonoBehaviour
 {
     [SerializeField] private GameObject[] tiles;
-
+    [SerializeField] private int puzzleID;
     [SerializeField] private GameObject[,,] pieces; 
     [SerializeField] private int width = 1;
     [SerializeField] private int height = 1;
@@ -72,7 +72,7 @@ public class PuzzleLine : MonoBehaviour
                 tile.GetComponent<Piece>().enabled = false;
                 tile.GetComponent<Piece>().puzzleSolved = true;
             }
-            GameProgress._instance.addSolved();
+            GameProgress._instance.addSolved(puzzleID);
         }
     }
 

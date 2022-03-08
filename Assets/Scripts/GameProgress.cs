@@ -5,8 +5,11 @@ using UnityEngine;
 public class GameProgress : MonoBehaviour
 {
     [SerializeField] GameObject[] spheres;
+    [SerializeField] private Puzzle[] puzzles; 
     public int ammountSloved;
     Material sphereOn;
+
+
 
 
     public static GameProgress _instance; 
@@ -18,11 +21,17 @@ public class GameProgress : MonoBehaviour
             _instance = this; 
 
         sphereOn = (Material)Resources.Load("Materials/SphereOn");
+
+        for (int i = 0; i < puzzles.Length; i++)
+        {
+            puzzles[i].puzzleID = i + 1;
+            i++; 
+        }
     }
 
-    public void addSolved()
+    public void addSolved(int id)
     {
         ammountSloved++;
-        spheres[ammountSloved - 1].GetComponent<MeshRenderer>().material = sphereOn; 
+        spheres[id- 1].GetComponent<MeshRenderer>().material = sphereOn; 
     }
 }

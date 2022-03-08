@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Puzzle : MonoBehaviour
 {
+    [SerializeField] public int puzzleID;
+
     [SerializeField] private GameObject[] tiles; 
 
     [SerializeField] private GameObject[,,] pieces; //this is causing so much less problems than expected, it's getting suspicious
+    [Tooltip("X-Axsis")]
     [SerializeField] private int width = 1;
+    [Tooltip("Y-Axsis")]
     [SerializeField] private int height = 1;
+    [Tooltip("Z-Axsis")]
     [SerializeField] private int depth = 1;
 
     [SerializeField] private Transform initTile;
@@ -20,7 +25,9 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private bool solved;
 
     [SerializeField] private Puzzle linked;
-    private bool isLinked; 
+    private bool isLinked;
+
+  
 
     private void Start()
     {
@@ -39,7 +46,7 @@ public class Puzzle : MonoBehaviour
            Vector3 noramlizedCords =  ConvertToGridspace(tile.transform.position, tile.transform.parent);
             tile.GetComponent<Piece>().puzzleManager = this;
             tile.GetComponent<Piece>().gridCoords = noramlizedCords;
-            print(Mathf.RoundToInt(noramlizedCords.x).ToString() + Mathf.RoundToInt(noramlizedCords.z).ToString() + Mathf.RoundToInt(noramlizedCords.y) + tile.name);
+            print(Mathf.RoundToInt(noramlizedCords.x).ToString()  + Mathf.RoundToInt(noramlizedCords.y)  + Mathf.RoundToInt(noramlizedCords.z).ToString() + tile.name);
             pieces[Mathf.RoundToInt(noramlizedCords.x),Mathf.RoundToInt(noramlizedCords.y), Mathf.RoundToInt(noramlizedCords.z)] = tile; 
         }
     
@@ -134,7 +141,7 @@ public class Puzzle : MonoBehaviour
             tile.GetComponent<Piece>().enabled = false;
             
         }
-        GameProgress._instance.addSolved();
+        GameProgress._instance.addSolved(puzzleID);
     }
 
 

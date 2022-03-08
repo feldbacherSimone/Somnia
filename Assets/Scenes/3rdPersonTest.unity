@@ -399,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 1797729686}
   - {fileID: 1014940569}
@@ -2987,6 +2988,7 @@ MonoBehaviour:
   - {fileID: 848002137}
   - {fileID: 1950172237}
   - {fileID: 713341571}
+  puzzleID: 0
   width: 1
   height: 1
   depth: 1
@@ -3620,7 +3622,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157016424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7809352, y: -0.86793005, z: -2.2122695}
+  m_LocalPosition: {x: 0.4100006, y: -0.86793005, z: -2.2122695}
   m_LocalScale: {x: 2.327712, y: 3.0915968, z: 2.8095205}
   m_Children: []
   m_Father: {fileID: 919230611}
@@ -5136,6 +5138,7 @@ GameObject:
   - component: {fileID: 235667746}
   - component: {fileID: 235667745}
   - component: {fileID: 235667744}
+  - component: {fileID: 235667747}
   m_Layer: 3
   m_Name: puzzle (63)
   m_TagString: Untagged
@@ -5219,6 +5222,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235667742}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &235667747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235667742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &235720421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7744937417261159697, guid: 61bca8ecebef68749b157273da2ff4bf, type: 3}
@@ -6757,6 +6779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 820675185323193426}
   - {fileID: 820675186719686287}
@@ -7095,6 +7118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 820675186370114475}
   - {fileID: 820675186020327097}
@@ -8535,6 +8559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 584954960}
   - {fileID: 107211487}
@@ -9916,6 +9941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 2
   tiles:
   - {fileID: 1781167198}
   - {fileID: 1671878436}
@@ -12151,6 +12177,7 @@ GameObject:
   - component: {fileID: 517169515}
   - component: {fileID: 517169514}
   - component: {fileID: 517169513}
+  - component: {fileID: 517169516}
   m_Layer: 3
   m_Name: puzzle (68)
   m_TagString: Untagged
@@ -12234,6 +12261,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517169511}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &517169516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517169511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 1
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &517723851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -12362,6 +12408,7 @@ GameObject:
   - component: {fileID: 524749599}
   - component: {fileID: 524749598}
   - component: {fileID: 524749597}
+  - component: {fileID: 524749600}
   m_Layer: 3
   m_Name: puzzle (69)
   m_TagString: Untagged
@@ -12445,6 +12492,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524749595}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &524749600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524749595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &526094110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -13031,6 +13097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 820675185034978453}
   - {fileID: 820675186323853090}
@@ -15347,6 +15414,7 @@ GameObject:
   - component: {fileID: 656169327}
   - component: {fileID: 656169326}
   - component: {fileID: 656169325}
+  - component: {fileID: 656169328}
   m_Layer: 3
   m_Name: puzzle (66)
   m_TagString: Untagged
@@ -15362,7 +15430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656169323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7809352, y: -0.86793005, z: 1.3957342}
+  m_LocalPosition: {x: 0.41, y: -0.86793005, z: 1.3957342}
   m_LocalScale: {x: 2.327712, y: 3.0915968, z: 2.8095205}
   m_Children: []
   m_Father: {fileID: 919230611}
@@ -15430,6 +15498,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656169323}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &656169328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656169323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &657233224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16913,31 +17000,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09400391
+      value: 0.09171684
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2563572
+      value: 3.3277853
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.11590959
+      value: 0.447024
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99119955
+      value: 0.9699733
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13036162
+      value: 0.24216568
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.022692742
+      value: -0.022498528
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426052082187, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0038031968
+      value: -0.0011945931
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_BindingMode
@@ -16945,11 +17032,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.1834103
+      value: 1.963028
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.318981
+      value: -9.296321
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -17017,11 +17104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.1834103
+      value: 1.963028
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.318981
+      value: -9.296321
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -17057,15 +17144,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.098245546
+      value: -0.09824553
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.003778154
+      value: 0.0037781622
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426442493945, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00037298983
+      value: 0.00037299647
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17081,19 +17168,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99923116
+      value: 0.99923337
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.03800352
+      value: 0.038003825
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.009158103
+      value: -0.008927645
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426582354409, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0030020806
+      value: -0.0029512313
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571832, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Name
@@ -17129,19 +17216,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.105948
+      value: -0.10396787
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.024360796
+      value: 0.023905504
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9687937
+      value: 0.96900827
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.2227563
+      value: 0.2228056
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426735571837, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17161,11 +17248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.1834103
+      value: 1.963028
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.318981
+      value: -9.296321
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -17715,6 +17802,7 @@ GameObject:
   - component: {fileID: 738369326}
   - component: {fileID: 738369325}
   - component: {fileID: 738369324}
+  - component: {fileID: 738369327}
   m_Layer: 3
   m_Name: puzzle (67)
   m_TagString: Untagged
@@ -17798,6 +17886,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738369322}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &738369327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738369322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &740479194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
@@ -19090,6 +19197,7 @@ GameObject:
   - component: {fileID: 800580753}
   - component: {fileID: 800580752}
   - component: {fileID: 800580751}
+  - component: {fileID: 800580754}
   m_Layer: 3
   m_Name: puzzle (64)
   m_TagString: Untagged
@@ -19173,6 +19281,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800580749}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &800580754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800580749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 1
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &800917613
 GameObject:
   m_ObjectHideFlags: 0
@@ -20085,6 +20212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842280796}
+  - component: {fileID: 842280797}
   m_Layer: 3
   m_Name: 10_Puzzle
   m_TagString: Untagged
@@ -20110,6 +20238,33 @@ Transform:
   m_Father: {fileID: 863992893}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842280797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842280795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleID: 0
+  tiles:
+  - {fileID: 1390442295}
+  - {fileID: 1541641168}
+  - {fileID: 1675500199}
+  - {fileID: 1648826851}
+  width: 2
+  height: 2
+  depth: 2
+  initTile: {fileID: 1675500200}
+  coord: {x: 0, y: 0, z: 0}
+  distance: 0
+  vecDistance: {x: 8, y: 10, z: 5}
+  solved: 0
+  linked: {fileID: 0}
 --- !u!1 &843440901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -20996,6 +21151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 676812995}
   - {fileID: 882753704}
@@ -22511,14 +22667,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiles: []
+  puzzleID: 0
+  tiles:
+  - {fileID: 1570040168}
+  - {fileID: 235667742}
+  - {fileID: 800580749}
+  - {fileID: 1185456863}
+  - {fileID: 656169323}
+  - {fileID: 738369322}
+  - {fileID: 517169511}
+  - {fileID: 524749595}
   width: 3
   height: 1
   depth: 3
-  initTile: {fileID: 0}
+  initTile: {fileID: 738369323}
   coord: {x: 0, y: 0, z: 0}
   distance: 0
-  vecDistance: {x: 0, y: 0, z: 3}
+  vecDistance: {x: 5, y: 10, z: 3}
   solved: 0
   linked: {fileID: 0}
 --- !u!1 &919609222 stripped
@@ -24976,6 +25141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 449627090}
   - {fileID: 1269840741}
@@ -27625,6 +27791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 1
   tiles:
   - {fileID: 1155511842}
   width: 1
@@ -28243,6 +28410,7 @@ GameObject:
   - component: {fileID: 1185456867}
   - component: {fileID: 1185456866}
   - component: {fileID: 1185456865}
+  - component: {fileID: 1185456868}
   m_Layer: 3
   m_Name: puzzle (65)
   m_TagString: Untagged
@@ -28258,7 +28426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185456863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7809352, y: -0.86793005, z: 4.60873}
+  m_LocalPosition: {x: 0.4100006, y: -0.86793005, z: 4.60873}
   m_LocalScale: {x: 2.327712, y: 3.0915968, z: 2.8095205}
   m_Children: []
   m_Father: {fileID: 919230611}
@@ -28326,6 +28494,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185456863}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1185456868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185456863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1196307871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -29691,6 +29878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 603780461}
   - {fileID: 910449312}
@@ -32230,6 +32418,7 @@ GameObject:
   - component: {fileID: 1390442299}
   - component: {fileID: 1390442298}
   - component: {fileID: 1390442297}
+  - component: {fileID: 1390442300}
   m_Layer: 3
   m_Name: puzzle (71)
   m_TagString: Untagged
@@ -32313,6 +32502,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390442295}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1390442300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390442295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1392300080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -35812,6 +36020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 914291676}
   - {fileID: 5843303}
@@ -35838,6 +36047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 1485213171}
   - {fileID: 347181325}
@@ -35879,6 +36089,7 @@ GameObject:
   - component: {fileID: 1541641172}
   - component: {fileID: 1541641171}
   - component: {fileID: 1541641170}
+  - component: {fileID: 1541641173}
   m_Layer: 3
   m_Name: puzzle (72)
   m_TagString: Untagged
@@ -35962,6 +36173,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541641168}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1541641173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541641168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 1
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1541881024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -36635,6 +36865,7 @@ GameObject:
   - component: {fileID: 1570040172}
   - component: {fileID: 1570040171}
   - component: {fileID: 1570040170}
+  - component: {fileID: 1570040173}
   m_Layer: 3
   m_Name: puzzle (62)
   m_TagString: Untagged
@@ -36718,6 +36949,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570040168}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1570040173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570040168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 1
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1 &1571660712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68eb3e7bea046e7408853dec1569db30, type: 3}
@@ -37964,6 +38214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 820675185096651974}
   - {fileID: 820675185924196001}
@@ -38201,6 +38452,7 @@ GameObject:
   - component: {fileID: 1648826855}
   - component: {fileID: 1648826854}
   - component: {fileID: 1648826853}
+  - component: {fileID: 1648826856}
   m_Layer: 3
   m_Name: puzzle (74)
   m_TagString: Untagged
@@ -38284,6 +38536,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648826851}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1648826856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648826851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 0
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!4 &1652321943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16af3682fcfac4f4e9659236f237a06e, type: 3}
@@ -38906,6 +39177,7 @@ GameObject:
   - component: {fileID: 1675500203}
   - component: {fileID: 1675500202}
   - component: {fileID: 1675500201}
+  - component: {fileID: 1675500204}
   m_Layer: 3
   m_Name: puzzle (73)
   m_TagString: Untagged
@@ -38989,6 +39261,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675500199}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1675500204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675500199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4588d33d39fae41acd144263e7bda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleManager: {fileID: 0}
+  puzzleManagerLine: {fileID: 0}
+  isOn: 1
+  gridCoords: {x: 0, y: 0, z: 0}
+  puzzleSolved: 0
+  sisterTile: {fileID: 0}
+  isLine: 0
 --- !u!1001 &1677378428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40277,6 +40568,22 @@ MonoBehaviour:
   - {fileID: 344882312}
   - {fileID: 1213240691}
   - {fileID: 690657652}
+  puzzles:
+  - {fileID: 1155511847}
+  - {fileID: 424986529}
+  - {fileID: 1271897342}
+  - {fileID: 876657593}
+  - {fileID: 289956082}
+  - {fileID: 391504416}
+  - {fileID: 1777550372}
+  - {fileID: 1534774875}
+  - {fileID: 919230612}
+  - {fileID: 1015027209}
+  - {fileID: 24445951}
+  - {fileID: 328127308}
+  - {fileID: 1809660527}
+  - {fileID: 547244682}
+  - {fileID: 1625606014}
   ammountSloved: 0
 --- !u!1 &1734884337
 GameObject:
@@ -41912,6 +42219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 919609222}
   - {fileID: 452897907}
@@ -42946,6 +43254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2fea51f1c24c84aac39a578f2cd6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: 0
   tiles:
   - {fileID: 820675186596257186}
   - {fileID: 820675184816911316}

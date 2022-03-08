@@ -17,12 +17,18 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private float distance;
     [SerializeField] private Vector3 vecDistance; 
     //public  bool[,] fields;
-    [SerializeField] private bool solved; 
+    [SerializeField] private bool solved;
+
+    [SerializeField] private Puzzle linked;
+    private bool isLinked; 
 
     private void Start()
     {
         if (distance != 0)
             vecDistance = new Vector3(distance, distance, distance);
+
+        if (linked != null)
+            isLinked = true; 
 
       //  fields = new bool[height ,width];
         pieces = new GameObject[width, height, depth];
@@ -84,21 +90,55 @@ public class Puzzle : MonoBehaviour
                 pieces[x, y, z + 1].GetComponent<Piece>().SwitchStates();
         }
         solved = CheckForSolved();
-        if (solved)
+        if(isLinked && solved)
         {
-            Debug.Log(gameObject.name + " is solved");
-            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position);
-            foreach(GameObject tile in tiles)
+            linked.CheckForSolved();
+            if (linked.solved)
             {
-                tile.GetComponent<Piece>().enabled = false;
-                tile.GetComponent<Piece>().puzzleSolved = true;
+                LockPuzzle();
+                
             }
-            GameProgress._instance.addSolved(); 
+        }
+        else if (solved)
+        {
+            LockPuzzle();
         }
     }
-    
+    public void SwitchStates( bool isSisterTile)
+    {
+      
+        solved = CheckForSolved();
+        if (isLinked && solved)
+        {
+            linked.CheckForSolved();
+            if (linked.solved)
+            {
+                linked.LockPuzzle();
+                LockPuzzle();
 
-    private bool CheckForSolved()
+            }
+        }
+        else if (solved)
+        {
+            LockPuzzle();
+        }
+    }
+
+    public void LockPuzzle()
+    {
+        Debug.Log(gameObject.name + " is solved");
+        SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position);
+        foreach (GameObject tile in tiles)
+        {
+            tile.GetComponent<Piece>().puzzleSolved = true;
+            tile.GetComponent<Piece>().enabled = false;
+            
+        }
+        GameProgress._instance.addSolved();
+    }
+
+
+     bool CheckForSolved()
     {
         for (int i = 0; i < tiles.Length; i++)
         {

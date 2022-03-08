@@ -50,14 +50,13 @@ public class Piece: MonoBehaviour
                 puzzleManager.SwitchStates(gridCoords);
             else if (isLine)
                 puzzleManagerLine.SwitchStates(gridCoords);
-        } 
-        if(sisterTile != null)
-        {
-            sisterTile.isOn = sisterTile.isOn ? false : true; 
-            sisterTile.SwitchColors();
-            
-        }
-     
+            if (sisterTile != null)
+            {
+                sisterTile.isOn = sisterTile.isOn ? false : true;
+                sisterTile.SwitchColors();
+                sisterTile.puzzleManager.SwitchStates(true);
+            }
+        }    
     }
 
     public void SwitchStates()

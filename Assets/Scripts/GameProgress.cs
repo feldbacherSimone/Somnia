@@ -21,11 +21,11 @@ public class GameProgress : MonoBehaviour
             _instance = this; 
 
         sphereOn = (Material)Resources.Load("Materials/SphereOn");
-
-        for (int i = 0; i < puzzles.Length; i++)
+        int i = 0; 
+        foreach(Puzzle puzzle in puzzles)
         {
-            puzzles[i].puzzleID = i + 1;
-            i++; 
+            puzzle.puzzleID = i + 1;
+            i++;
         }
     }
 

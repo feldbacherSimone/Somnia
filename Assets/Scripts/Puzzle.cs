@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Puzzle : MonoBehaviour
 {
-    [SerializeField] public int puzzleID;
+     public int puzzleID;
 
     [SerializeField] private GameObject[] tiles; 
 

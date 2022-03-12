@@ -13,12 +13,22 @@ public class Raycasting : MonoBehaviour
     [SerializeField]private float weightSmoothTime = 0.4f; 
     private float weightSmoothVel;
 
-    private float currentWeight; 
+    private float currentWeight;
+
+    [SerializeField] private bool debug; 
 
     private RaycastHit _hit;
     private Vector3 _targetPos;
     private Ray ray;
-   
+
+    void PrintDebug(string message)
+    {
+        if (debug)
+        {
+            Debug.Log(message);
+        }
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -65,7 +75,7 @@ public class Raycasting : MonoBehaviour
 
     private void SelectSquare()
     {
-        Debug.Log("Click!");
+        PrintDebug("Click!");
         if (Physics.Raycast(ray, out _hit, Mathf.Infinity))
         {
 
@@ -75,8 +85,8 @@ public class Raycasting : MonoBehaviour
 
                 piece.Onhit();
             }
-          
-            Debug.Log("Did Hit");
+
+            PrintDebug("Did Hit");
         }       
             //Debug.Log("Did not Hit"); 
     }

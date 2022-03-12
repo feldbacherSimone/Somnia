@@ -26,8 +26,16 @@ public class Puzzle : MonoBehaviour
 
     [SerializeField] private Puzzle linked;
     private bool isLinked;
+    [SerializeField] private bool debug; 
 
-  
+
+    void PrintDebug(string message)
+    {
+        if (debug)
+        {
+            Debug.Log(message);
+        }
+    }
 
     private void Start()
     {
@@ -46,7 +54,7 @@ public class Puzzle : MonoBehaviour
            Vector3 noramlizedCords =  ConvertToGridspace(tile.transform.position, tile.transform.parent);
             tile.GetComponent<Piece>().puzzleManager = this;
             tile.GetComponent<Piece>().gridCoords = noramlizedCords;
-            print(Mathf.RoundToInt(noramlizedCords.x).ToString()  + Mathf.RoundToInt(noramlizedCords.y)  + Mathf.RoundToInt(noramlizedCords.z).ToString() + tile.name);
+            PrintDebug(Mathf.RoundToInt(noramlizedCords.x).ToString()  + Mathf.RoundToInt(noramlizedCords.y)  + Mathf.RoundToInt(noramlizedCords.z).ToString() + tile.name);
             pieces[Mathf.RoundToInt(noramlizedCords.x),Mathf.RoundToInt(noramlizedCords.y), Mathf.RoundToInt(noramlizedCords.z)] = tile; 
         }
     

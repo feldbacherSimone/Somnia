@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
   m_Name: UniversalRenderPipelineAsset_Renderer
   m_EditorClassIdentifier: 
-  m_RendererFeatures: []
-  m_RendererFeatureMap: 
+  m_RendererFeatures:
+  - {fileID: 6322874845898062249}
+  m_RendererFeatureMap: a9b9011d2c5dbf57
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -42,3 +43,30 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
+--- !u!114 &6322874845898062249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836fba37e8552f541abf20055e192196, type: 3}
+  m_Name: NewAtmosphericFogRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    color: {r: 0.2660022, g: 0.20473477, b: 0.6698113, a: 1}
+    sunColor: {r: 0.9433962, g: 0.9276571, b: 0.7333571, a: 1}
+    fogDensity: 0.05
+    fogDensityPower: 4.2
+    skyAlpha: 1
+    useHeightFog: 1
+    fogHeightStart: -0.84
+    fogHeightEnd: 15.45
+    fogHeightPower: 0.5
+    extraFogHeightEnd: 1.54
+    extraFogHeightPower: 0.5
+    directionalIntesity: 4.22
+    directionalPower: 1.25

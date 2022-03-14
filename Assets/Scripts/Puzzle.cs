@@ -22,7 +22,7 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private float distance;
     [SerializeField] private Vector3 vecDistance; 
     //public  bool[,] fields;
-    [SerializeField] private bool solved;
+    [SerializeField] public bool solved;
 
     [SerializeField] private Puzzle linked;
     private bool isLinked;

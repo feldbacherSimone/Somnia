@@ -91,9 +91,9 @@ public class ThirdPersonMovementScript : MonoBehaviour
         {
             currentVel.y = -2f;
         }
-
-        Move();
         Jump();
+        Move();
+        
 
         _jumoTimeOutDelta -= Time.deltaTime;
     
@@ -109,7 +109,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
         centreSmoothTime = Mathf.Sqrt(jumpHeight * -2 * -gravity) / (gravity*2.5f);
         currentHeight = transform.position.y;
-        StartCoroutine("AdjustMidpoint");     
+       // StartCoroutine("AdjustMidpoint");     
         currentVel.y = Mathf.Sqrt(jumpHeight * -2 * -gravity);
     }
 
@@ -132,7 +132,9 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
-            contoller.Move(moveDirection.normalized * speed * Time.deltaTime * currentInput.magnitude);
+            //contoller.Move(moveDirection.normalized * speed * Time.deltaTime * currentInput.magnitude);
+            contoller.Move(moveDirection.normalized * speed * Time.deltaTime * currentInput.magnitude + currentVel * Time.deltaTime);
+            // this is a fucking godsent thank you gamedev stackexchange user Kévin Grandjean 
 
             currentBlend = Mathf.SmoothDamp(currentBlend, (_inputs.move.magnitude * speed) / sprintSpeed, ref smoothBlendVel, animationSmoothTime);
             currentBlend = Mathf.Clamp(currentBlend, 0, 1);
@@ -140,11 +142,15 @@ public class ThirdPersonMovementScript : MonoBehaviour
             animator.SetFloat("Blend", currentBlend);
             stepSounds.setCurretnVol(currentBlend); 
         }
+        else
+        {
+            contoller.Move( currentVel * Time.deltaTime);
+        }
     }
     private void Jump()
     {
         currentVel.y -= gravity * Time.deltaTime;
-        contoller.Move(currentVel * Time.deltaTime);
+        //contoller.Move(currentVel * Time.deltaTime);
 
         if (_inputs.jump && isGrounded && _jumoTimeOutDelta <= 0.0f)
         {

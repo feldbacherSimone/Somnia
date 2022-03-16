@@ -149,7 +149,12 @@ public class ThirdPersonMovementScript : MonoBehaviour
     }
     private void Jump()
     {
+        
+
+
         currentVel.y -= gravity * Time.deltaTime;
+        
+
         //contoller.Move(currentVel * Time.deltaTime);
 
         if (_inputs.jump && isGrounded && _jumoTimeOutDelta <= 0.0f)

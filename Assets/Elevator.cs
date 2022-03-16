@@ -6,6 +6,7 @@ public class Elevator : MonoBehaviour
 {
     [SerializeField] Transform startPoint;
     [SerializeField] Transform tragetPoint;
+    
 
     private void Start()
     {
@@ -17,6 +18,19 @@ public class Elevator : MonoBehaviour
     {
         Debug.Log("TEST LMAO"); 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            other.transform.parent = this.transform; 
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.transform.parent = null; 
+        }
+    }
 
-   
 }

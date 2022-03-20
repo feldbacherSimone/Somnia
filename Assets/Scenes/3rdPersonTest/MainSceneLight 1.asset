@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8508847990013888630
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
+  m_Name: SplitToning
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  shadows:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 0
+    showEyeDropper: 1
+  highlights:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 0
+    showEyeDropper: 1
+  balance:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -100
+    max: 100
 --- !u!114 &-6595378979357926108
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -62,6 +93,45 @@ MonoBehaviour:
     m_Value: -24
     min: -180
     max: 180
+--- !u!114 &-6260323596347717432
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.9752365, y: 1, z: 0.92455876, w: -0.23255822}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 0.95916224, y: 1, z: 0.9443575, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 0.92547, y: 0.9935476, z: 1, w: 0}
+  shadowsStart:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  shadowsEnd:
+    m_OverrideState: 0
+    m_Value: 0.3
+    min: 0
+  highlightsStart:
+    m_OverrideState: 0
+    m_Value: 0.55
+    min: 0
+  highlightsEnd:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
 --- !u!114 &-618844885992718443
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -78,7 +148,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.87118584, y: 0.95242375, z: 1, w: -0.013315578}
+    m_Value: {x: 0.87118584, y: 0.95242375, z: 1, w: -0.013315577}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 0.8084932, y: 1, z: 0.91319275, w: 0.017694268}
@@ -98,7 +168,6 @@ MonoBehaviour:
   m_Name: MainSceneLight 1
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 4368093008060156610}
   - {fileID: -6595378979357926108}
   - {fileID: 6211532637811881966}
   - {fileID: 8836953611296042052}
@@ -106,6 +175,9 @@ MonoBehaviour:
   - {fileID: 2627341585204273703}
   - {fileID: -618844885992718443}
   - {fileID: 3287061427834878436}
+  - {fileID: -6260323596347717432}
+  - {fileID: 4368093008060156610}
+  - {fileID: -8508847990013888630}
 --- !u!114 &2627341585204273703
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -384,7 +456,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.78679246, g: 1, b: 0.8600023, a: 1}
+    m_Value: {r: 0.86226416, g: 0.9618711, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1

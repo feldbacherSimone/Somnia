@@ -174,6 +174,9 @@ public class ThirdPersonMovementScript : MonoBehaviour
         animator.SetBool("Grounded", isNearGround);
     }
     
+    //this took me over 3 hours just to get abandoned in the end 
+    //Í am going more bald by the second 
+
    IEnumerator AdjustMidpoint()
     {
 

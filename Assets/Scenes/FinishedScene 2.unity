@@ -9923,7 +9923,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+  - {fileID: 2100000, guid: 28f8756f127d9fe479614511b18bc9dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15479,7 +15479,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 68184f4b8580bc64ba07a86315ad67a8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+      objectReference: {fileID: 2100000, guid: 28f8756f127d9fe479614511b18bc9dd, type: 2}
     - target: {fileID: 919132149155446097, guid: 68184f4b8580bc64ba07a86315ad67a8, type: 3}
       propertyPath: m_Name
       value: Wendeltreppe
@@ -18486,7 +18486,7 @@ PrefabInstance:
     - target: {fileID: 7121182569018785536, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 084ac30ed29de204cb12a0c6219fb343, type: 2}
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 7121182569018785542, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Name
       value: Uebergang (1)
@@ -24049,7 +24049,7 @@ PrefabInstance:
     - target: {fileID: 7121182569018785536, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6bb5a7e95b499004ea7fd92eeac6d596, type: 2}
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 7121182569018785542, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Name
       value: Uebergang (4)
@@ -24874,6 +24874,10 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.22
       objectReference: {fileID: 0}
+    - target: {fileID: 5350421925432259431, guid: 9bdf59f4764fb08418b679e09067f0b0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 5854811545048339122, guid: 9bdf59f4764fb08418b679e09067f0b0, type: 3}
       propertyPath: m_Name
       value: Rock3 (1)
@@ -26687,7 +26691,7 @@ PrefabInstance:
     - target: {fileID: 7121182569018785536, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 084ac30ed29de204cb12a0c6219fb343, type: 2}
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 7121182569018785542, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Name
       value: Uebergang (2)
@@ -30341,6 +30345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 634058565}
     m_Modifications:
+    - target: {fileID: 3170384921086770278, guid: b9715f46f7a2f7d46953f68f1eb2ae6c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 3847616099957186011, guid: b9715f46f7a2f7d46953f68f1eb2ae6c, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -32164,7 +32172,7 @@ PrefabInstance:
     - target: {fileID: 7121182569018785536, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 084ac30ed29de204cb12a0c6219fb343, type: 2}
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 7121182569018785542, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Name
       value: Uebergang (3)
@@ -37175,7 +37183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+  - {fileID: 2100000, guid: f3b1d361e7f11dd40aba98803326589c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47420,7 +47428,7 @@ PrefabInstance:
     - target: {fileID: 7121182569018785536, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 084ac30ed29de204cb12a0c6219fb343, type: 2}
+      objectReference: {fileID: 2100000, guid: e785e5b4046c0dd41835b613a98e9fa8, type: 2}
     - target: {fileID: 7121182569018785542, guid: 26af24bdeae1af94c820e2c3a5e55890, type: 3}
       propertyPath: m_Name
       value: Uebergang
@@ -47621,7 +47629,7 @@ PrefabInstance:
     - target: {fileID: 7279370206040788759, guid: c9c145bf441cbe64ebf403830695fffa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+      objectReference: {fileID: 2100000, guid: f3b1d361e7f11dd40aba98803326589c, type: 2}
     - target: {fileID: 7682332495428708505, guid: c9c145bf441cbe64ebf403830695fffa, type: 3}
       propertyPath: m_Name
       value: wendeltreppen
@@ -47637,7 +47645,7 @@ PrefabInstance:
     - target: {fileID: 8186942430304029004, guid: c9c145bf441cbe64ebf403830695fffa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+      objectReference: {fileID: 2100000, guid: f3b1d361e7f11dd40aba98803326589c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c145bf441cbe64ebf403830695fffa, type: 3}
 --- !u!1001 &7479643450436731901

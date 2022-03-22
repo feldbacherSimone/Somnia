@@ -37844,7 +37844,7 @@ GameObject:
   - component: {fileID: 1814544906}
   - component: {fileID: 1814544905}
   - component: {fileID: 1814544909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs_650_400_300_Prefab (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48104,7 +48104,7 @@ GameObject:
   - component: {fileID: 5706399264329496161}
   - component: {fileID: 8542057438499985145}
   - component: {fileID: 8156322879714592236}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stairs_650_400_300_Prefab (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -16,7 +16,10 @@ public class GameProgress : MonoBehaviour
 
     public static GameProgress _instance; 
     private void Start()
+
     {
+        SoundManager.LoadMixer();
+
         if (_instance != null)
             Destroy(this);
         else

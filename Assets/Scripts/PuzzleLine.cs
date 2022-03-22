@@ -66,7 +66,7 @@ public class PuzzleLine : MonoBehaviour
         if (solved)
         {
             Debug.Log(gameObject.name + " is solved");
-            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position);
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position, "SFX");
             foreach (GameObject tile in tiles)
             {
                 tile.GetComponent<Piece>().enabled = false;

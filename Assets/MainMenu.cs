@@ -43,6 +43,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] SpriteRenderer title;
     [SerializeField] AudioMixer audioMixer;
 
+    [SerializeField] Button[] buttons; 
+
     [SerializeField] Dropdown dropdown;
 
     bool startScrren = true; 
@@ -76,7 +78,8 @@ public class MainMenu : MonoBehaviour
         );
         dropdown.onValueChanged.AddListener((value) =>
         {
-            QualitySettings.SetQualityLevel(value*2); 
+            QualitySettings.SetQualityLevel(value*2);
+            SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
         });
 
 
@@ -86,14 +89,31 @@ public class MainMenu : MonoBehaviour
     {
         slider.onValueChanged.AddListener((value) =>
         {
-            audioMixer.SetFloat(parameter, value);
+            audioMixer.SetFloat(parameter, Mathf.Log10(value) * 20 );
+            SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
         }
         );
     }
 
+    void AssignButtonSounds()
+    {
+        foreach(Button button in buttons)
+        {
+            button.onClick.AddListener(() =>
+            {
+                SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
+
+            });
+        }
+    }
+ 
+
     private void Start()
     {
+
+        SoundManager.LoadMixer();
         scene = SceneManager.GetActiveScene();
+        AssignButtonSounds();
         InitSliders(s_VolMaster, "masterVol");
         InitSliders(s_VolMusic, "musicVol");
         InitSliders(s_VolSFX, "sfxVol"); 

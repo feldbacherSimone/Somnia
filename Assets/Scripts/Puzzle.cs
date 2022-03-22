@@ -142,7 +142,7 @@ public class Puzzle : MonoBehaviour
     public void LockPuzzle()
     {
         Debug.Log(gameObject.name + " is solved");
-        SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position);
+        SoundManager.PlaySound(SoundManager.Sound.PuzzleSolve, transform.position, "SFX");
         foreach (GameObject tile in tiles)
         {
             tile.GetComponent<Piece>().puzzleSolved = true;

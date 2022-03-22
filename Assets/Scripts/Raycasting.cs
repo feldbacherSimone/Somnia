@@ -37,7 +37,7 @@ public class Raycasting : MonoBehaviour
         FreeLookObject.SetActive(true);
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {

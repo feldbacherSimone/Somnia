@@ -26,8 +26,8 @@ public class Puzzle : MonoBehaviour
 
     [SerializeField] private Puzzle linked;
     private bool isLinked;
-    [SerializeField] private bool debug; 
-
+    [SerializeField] private bool debug;
+    [SerializeField] private bool solveState; 
 
     void PrintDebug(string message)
     {
@@ -43,9 +43,12 @@ public class Puzzle : MonoBehaviour
             vecDistance = new Vector3(distance, distance, distance);
 
         if (linked != null)
-            isLinked = true; 
+            isLinked = true;
 
-      //  fields = new bool[height ,width];
+        if (!isLinked)
+            solveState = true; 
+            
+            //  fields = new bool[height ,width];
         pieces = new GameObject[width, height, depth];
 
 
@@ -104,10 +107,11 @@ public class Puzzle : MonoBehaviour
             if (pieces[x, y, z + 1] != null)
                 pieces[x, y, z + 1].GetComponent<Piece>().SwitchStates();
         }
-        solved = CheckForSolved();
+
+        solved = CheckForSolved(solveState);
         if(isLinked && solved)
         {
-            linked.CheckForSolved();
+            linked.CheckForSolved(!solveState);
             if (linked.solved)
             {
                 LockPuzzle();
@@ -122,10 +126,10 @@ public class Puzzle : MonoBehaviour
     public void SwitchStates( bool isSisterTile)
     {
       
-        solved = CheckForSolved();
+        solved = CheckForSolved(solveState);
         if (isLinked && solved)
         {
-            linked.CheckForSolved();
+            linked.CheckForSolved(solveState);
             if (linked.solved)
             {
                 linked.LockPuzzle();

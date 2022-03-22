@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.Audio; 
 public class MainMenu : MonoBehaviour
 {
+
+    //this is all in one class because I hate myself actually 
     Scene scene;
-    [SerializeField] CameraTarget camTarget; 
-    
+
+    [Header("Camera")]
+    [SerializeField] CameraTarget camTarget;
+
+    [Tooltip("This refers to the offset variables in the Mouse target and not the actual Camera Position")]
     [SerializeField] private Vector3 initCamera;
     [SerializeField] private Vector3 mainMenuCam;
     [SerializeField] private Vector3 optionsCam; 
@@ -15,16 +21,29 @@ public class MainMenu : MonoBehaviour
     [SerializeField] AnimationCurve curve;
     [SerializeField] float duration = 1f;
 
+    [Header("Menues")]
+
     [SerializeField] GameObject mainMenueObject;
     [SerializeField] GameObject optionsObject;
     [SerializeField] GameObject startScreenObject; 
 
+    [Header("Buttons")]
+   
     [SerializeField] Button b_Options;
     [SerializeField] Button b_Play;
     [SerializeField] Button b_ExitGame;
     [SerializeField] Button b_Back;
+    [SerializeField] Button b_Controlls; 
 
-    [SerializeField] SpriteRenderer title; 
+    [Header("Sliders")]
+    [SerializeField] Slider s_VolMaster;
+    [SerializeField] Slider s_VolSFX;
+    [SerializeField] Slider s_VolMusic; 
+
+    [SerializeField] SpriteRenderer title;
+    [SerializeField] AudioMixer audioMixer;
+
+    [SerializeField] Dropdown dropdown;
 
     bool startScrren = true; 
     
@@ -48,13 +67,37 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene(scene.buildIndex + 1);
         }
-    );
+
+         );
+        b_ExitGame.onClick.AddListener(() =>
+        {
+            Application.Quit();
+        }
+        );
+        dropdown.onValueChanged.AddListener((value) =>
+        {
+            QualitySettings.SetQualityLevel(value*2); 
+        });
+
+
     }
     
+    void InitSliders(Slider slider, string parameter)
+    {
+        slider.onValueChanged.AddListener((value) =>
+        {
+            audioMixer.SetFloat(parameter, value);
+        }
+        );
+    }
 
     private void Start()
     {
         scene = SceneManager.GetActiveScene();
+        InitSliders(s_VolMaster, "masterVol");
+        InitSliders(s_VolMusic, "musicVol");
+        InitSliders(s_VolSFX, "sfxVol"); 
+
         InitButtons();
     }
     private void Update()

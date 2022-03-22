@@ -27,7 +27,7 @@ public class CameraTarget : MonoBehaviour
         float realitveMouseX = pos.x / Screen.width  - 0.5f + xOffset;
         float realitveMouseY = pos.y / Screen.height - 0.5f + yOffset;
 
-        if (camera)
+      /*  if (camera)
         {
             if (zDepth >= scrollMin && zDepth <= scrollMax)
             {
@@ -42,7 +42,7 @@ public class CameraTarget : MonoBehaviour
             {
                 zDepth = scrollMax;
             }
-        }
+        } */
         
 
         Vector3 newPos = new Vector3(initPos.x + realitveMouseX * strength, initPos.y + realitveMouseY * strength, zDepth);

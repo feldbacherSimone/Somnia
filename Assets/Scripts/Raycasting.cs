@@ -10,6 +10,8 @@ public class Raycasting : MonoBehaviour
     [SerializeField] private Material otherMat;
     [SerializeField] private Animator animator;
 
+    [SerializeField] private GameObject FreeLookObject; 
+
     [SerializeField]private float weightSmoothTime = 0.4f; 
     private float weightSmoothVel;
 
@@ -29,7 +31,13 @@ public class Raycasting : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Start()
+    {
+       Cursor.lockState =  CursorLockMode.Locked;
+        FreeLookObject.SetActive(true);
+    }
+
+    private void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {

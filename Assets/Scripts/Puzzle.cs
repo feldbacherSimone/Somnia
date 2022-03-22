@@ -164,4 +164,28 @@ public class Puzzle : MonoBehaviour
        return true; 
         
     }
+    bool CheckForSolved(bool state)
+    {
+        if (state)
+        {
+            for (int i = 0; i < tiles.Length; i++)
+            {
+
+                if (!tiles[i].GetComponent<Piece>().isOn)
+                    return false;
+            }
+            return true;
+        }
+        else
+        {
+            for (int i = 0; i < tiles.Length; i++)
+            {
+
+                if (tiles[i].GetComponent<Piece>().isOn)
+                    return false;
+            }
+            return true;
+        }
+
+    }
 }

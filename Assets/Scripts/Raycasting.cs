@@ -23,6 +23,8 @@ public class Raycasting : MonoBehaviour
     private Vector3 _targetPos;
     private Ray ray;
 
+    Outline _outline; 
+
     void PrintDebug(string message)
     {
         if (debug)
@@ -67,11 +69,27 @@ public class Raycasting : MonoBehaviour
             if (piece != null)
             {
                 RaiseHand(1f);
+                if (_outline != piece.outline && _outline != null)
+                {
+                    _outline.OutlineColor = new Color(1, 1, 1, 0);
+                    _outline = null;
+                }
+                if (_outline == null)
+                {
+                    piece.outline.OutlineColor = new Color(1, 1, 1, 1);
+                    _outline = piece.outline;
+                }
+               
                 //print("raise" + currentWeight);
             }
             else
             {
                 RaiseHand(0f);
+                if (_outline != null)
+                {
+                    _outline.OutlineColor = new Color(1, 1, 1, 0);
+                    _outline = null;
+                }
                 //print("dont raise" + currentWeight);
             }
         }
@@ -98,6 +116,9 @@ public class Raycasting : MonoBehaviour
         }       
             //Debug.Log("Did not Hit"); 
     }
+
+
+  
 
 
     public void RaiseHand(float target)

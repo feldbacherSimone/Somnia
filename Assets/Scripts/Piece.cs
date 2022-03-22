@@ -13,11 +13,11 @@ public class Piece: MonoBehaviour
     public Vector3 gridCoords;
     public bool puzzleSolved = false;
     [SerializeField] Piece sisterTile;
-    [SerializeField] private bool isLine; 
-
+    [SerializeField] private bool isLine;
+    public  Outline outline; 
     private void Awake()
     {
-
+        AddOutline(gameObject); 
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
  
         onMat = (Material)Resources.Load("Materials/OnMat");
@@ -25,6 +25,14 @@ public class Piece: MonoBehaviour
         SwitchColors();
 
       
+    }
+
+    private void AddOutline(GameObject outlineObejct)
+    {
+        outline = outlineObejct.AddComponent<Outline>();
+        outline.OutlineMode = Outline.Mode.OutlineVisible;
+        outline.OutlineWidth = 5f; 
+        outline.OutlineColor = new Color(1, 1, 1, 0);
     }
     public void SwitchColors()
     {

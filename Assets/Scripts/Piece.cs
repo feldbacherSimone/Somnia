@@ -17,14 +17,14 @@ public class Piece: MonoBehaviour
     public  Outline outline; 
     private void Awake()
     {
-        AddOutline(gameObject); 
+       
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
  
         onMat = (Material)Resources.Load("Materials/OnMat");
         offMat = (Material)Resources.Load("Materials/OffMat");
         SwitchColors();
+        AddOutline(gameObject);
 
-      
     }
 
     private void AddOutline(GameObject outlineObejct)

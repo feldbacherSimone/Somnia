@@ -6,14 +6,19 @@ public class Footstep : MonoBehaviour
 {
     private float currentVol;
     [SerializeField] private float volumeFactor;
+    public bool isGrass; 
 
+    
     private void Start()
     {
         SoundManager.LoadMixer();
     }
     public void Step()
     {
-        SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, this.transform.position, currentVol*volumeFactor, "SFX");
+        if (isGrass)
+            SoundManager.PlaySound(SoundManager.Sound.PlayerWalkGrass, this.transform.position, currentVol * volumeFactor, "SFX");
+        else
+            SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, this.transform.position, currentVol * volumeFactor, "SFX");
     }
 
     public void Land()

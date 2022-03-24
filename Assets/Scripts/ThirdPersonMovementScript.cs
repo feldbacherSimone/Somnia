@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 //to do
 //implement Running and animation
@@ -207,5 +208,21 @@ public class ThirdPersonMovementScript : MonoBehaviour
             yield return null;
         }
 
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+ 
+    {
+        
+
+      
+        print("collision"); 
+        if (hit.gameObject.CompareTag("Grass") && isGrounded)
+        {
+            print("grass"); 
+            stepSounds.isGrass = true;
+        }
+        else
+            stepSounds.isGrass = false;
     }
 }

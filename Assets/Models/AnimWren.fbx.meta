@@ -62,13 +62,13 @@ ModelImporter:
     second: Jump
   - first:
       74: 3375526064743485202
-    second: jumpLnad
+    second: JumpLand
   - first:
       74: -5380353794535015007
     second: Armature|Jump.001
   - first:
       74: -812309248706023001
-    second: jumpoff
+    second: Jumpoff
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -171,7 +171,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: jumpLnad
+      name: JumpLand
       takeName: Armature|Jump.001
       internalID: 0
       firstFrame: 33
@@ -322,7 +322,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: jumpoff
+      name: Jumpoff
       takeName: Armature|Jump.001
       internalID: 0
       firstFrame: 0

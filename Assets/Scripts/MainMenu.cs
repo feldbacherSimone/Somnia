@@ -79,7 +79,7 @@ public class MainMenu : MonoBehaviour
         dropdown.onValueChanged.AddListener((value) =>
         {
             QualitySettings.SetQualityLevel(value*2);
-            SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
+            SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
         });
 
 
@@ -90,7 +90,7 @@ public class MainMenu : MonoBehaviour
         slider.onValueChanged.AddListener((value) =>
         {
             audioMixer.SetFloat(parameter, Mathf.Log10(value) * 20 );
-            SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
+            SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
         }
         );
     }
@@ -101,7 +101,7 @@ public class MainMenu : MonoBehaviour
         {
             button.onClick.AddListener(() =>
             {
-                SoundManager.PlaySound(SoundManager.Sound.MenuButton, "SFX");
+                SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
 
             });
         }
@@ -124,6 +124,7 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.anyKeyDown && startScrren)
         {
+            SoundManager.PlaySound(SoundManager.Sound.TitleFade, SoundManager.Mixer.SFX); 
             StartCoroutine(MoveCamera(initCamera, mainMenuCam, mainMenueObject));
             StartCoroutine(FadeTitle());
             startScreenObject.SetActive(false);

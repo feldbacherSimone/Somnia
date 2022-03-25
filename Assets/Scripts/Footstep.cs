@@ -16,19 +16,19 @@ public class Footstep : MonoBehaviour
     public void Step()
     {
         if (isGrass)
-            SoundManager.PlaySound(SoundManager.Sound.PlayerWalkGrass, this.transform.position, currentVol * volumeFactor, "SFX");
+            SoundManager.PlaySound(SoundManager.Sound.PlayerWalkGrass, this.transform.position, currentVol * volumeFactor, SoundManager.Mixer.SFX);
         else
-            SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, this.transform.position, currentVol * volumeFactor, "SFX");
+            SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, this.transform.position, currentVol * volumeFactor, SoundManager.Mixer.SFX);
     }
 
     public void Land()
     {
-        SoundManager.PlaySound(SoundManager.Sound.PlayerLand, this.transform.position, "SFX");
+        SoundManager.PlaySound(SoundManager.Sound.PlayerLand, this.transform.position, SoundManager.Mixer.SFX);
     }
 
     public void Jump()
     {
-        SoundManager.PlaySound(SoundManager.Sound.PlayerJump, this.transform.position, "SFX");
+        SoundManager.PlaySound(SoundManager.Sound.PlayerJump, this.transform.position, SoundManager.Mixer.SFX);
     }
     public void setCurretnVol(float vol)
     {

@@ -51,6 +51,7 @@ public class GameProgress : MonoBehaviour
             if (!puzzles[_int].solved)
                 return false; 
         }
+        condition.isTrue = true; 
         condition.conditionEvent.Invoke();
         return true;
     }

@@ -8768,7 +8768,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 00d1f5c42a546e24ab7a1c7dd5cc46c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 885d32fadf2e6e64ea274d16cc56a81e, type: 2}
+      objectReference: {fileID: 2100000, guid: 3b7fe1c857db5424ab03e17094c71a7b, type: 2}
     - target: {fileID: 919132149155446097, guid: 00d1f5c42a546e24ab7a1c7dd5cc46c9, type: 3}
       propertyPath: m_Name
       value: pose12
@@ -19005,7 +19005,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 04f542c9bd1e1b84092b76ccf7bcf943, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 885d32fadf2e6e64ea274d16cc56a81e, type: 2}
+      objectReference: {fileID: 2100000, guid: 28f8756f127d9fe479614511b18bc9dd, type: 2}
     - target: {fileID: 919132149155446097, guid: 04f542c9bd1e1b84092b76ccf7bcf943, type: 3}
       propertyPath: m_Name
       value: pose7
@@ -20695,7 +20695,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6efe96b8fb31924459a01691baea7bfe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 885d32fadf2e6e64ea274d16cc56a81e, type: 2}
+      objectReference: {fileID: 2100000, guid: d06b2e245e312db43b1f4029ded44bbd, type: 2}
     - target: {fileID: 919132149155446097, guid: 6efe96b8fb31924459a01691baea7bfe, type: 3}
       propertyPath: m_Name
       value: pose18
@@ -21478,7 +21478,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6efe96b8fb31924459a01691baea7bfe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9ff993f6e27366048b57ff2fdd81805d, type: 2}
+      objectReference: {fileID: 2100000, guid: d06b2e245e312db43b1f4029ded44bbd, type: 2}
     - target: {fileID: 919132149155446097, guid: 6efe96b8fb31924459a01691baea7bfe, type: 3}
       propertyPath: m_Name
       value: pose18 (1)
@@ -45547,7 +45547,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aeae023a6b98349459bc0cbcbcbb6e33, type: 2}
+  - {fileID: 2100000, guid: d06b2e245e312db43b1f4029ded44bbd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

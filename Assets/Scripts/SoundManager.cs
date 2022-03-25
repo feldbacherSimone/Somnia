@@ -15,6 +15,15 @@ public static class SoundManager
 
        MenuButton, 
        PlayerWalkGrass,
+
+       TitleFade,
+       DisableBarrier, 
+    }
+
+    public enum Mixer //there's only two channels at this point but if i have to debug for 30 minutes just because I made a typo again one more time im gonna dlelete this project 
+    {
+        SFX, 
+        Music, 
     }
 
 
@@ -32,25 +41,25 @@ public static class SoundManager
         Debug.Log("loadedMixer");
     }
 
-    public static void PlaySound(Sound sound, string group)
+    public static void PlaySound(Sound sound, Mixer mixer)
     {
         if (oneShotGameObject == null)
         {
             oneShotGameObject = new GameObject("One Shot Sound");
             oneShotAudioSource = oneShotGameObject.AddComponent<AudioSource>();
-            AssignMixer(group, oneShotAudioSource);
+            AssignMixer(mixer, oneShotAudioSource);
             oneShotAudioSource.volume = GetVolume(sound);
            
         }
         oneShotAudioSource.PlayOneShot(GetAudioClip(sound));
     }
 
-    public static void PlaySound(Sound sound, Vector3 pos, string group)
+    public static void PlaySound(Sound sound, Vector3 pos, Mixer mixer)
     {
         GameObject soundGameObject = new GameObject("Sound");
         soundGameObject.transform.position = pos; 
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
-        AssignMixer(group, audioSource);
+        AssignMixer(mixer, audioSource);
         audioSource.clip = GetAudioClip(sound);
         audioSource.spatialBlend = 1;
         audioSource.maxDistance = 10;
@@ -62,7 +71,7 @@ public static class SoundManager
         Object.Destroy(soundGameObject, audioSource.clip.length);
     }
 
-    public static void PlaySound(Sound sound, Vector3 pos, float volume, string group)
+    public static void PlaySound(Sound sound, Vector3 pos, float volume, Mixer mixer)
     {
         if (stepSoundObject == null)
         {
@@ -70,7 +79,7 @@ public static class SoundManager
             stepSoundObject.transform.position = pos;
             stepSource = stepSoundObject.AddComponent<AudioSource>();
 
-            AssignMixer(group, stepSource);
+            AssignMixer(mixer, stepSource);
 
             stepSource.clip = GetAudioClip(sound);
             stepSource.spatialBlend = 1;
@@ -82,6 +91,24 @@ public static class SoundManager
         }
  
      
+    }
+
+    public static float PlayAndWait(Sound sound, Vector3 pos, Mixer mixer)
+    {
+        GameObject soundGameObject = new GameObject("Sound");
+        soundGameObject.transform.position = pos;
+        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        AssignMixer(mixer, audioSource);
+
+        audioSource.clip = GetAudioClip(sound);
+        audioSource.spatialBlend = 1;
+        audioSource.maxDistance = 10;
+        audioSource.dopplerLevel = 0;
+
+        audioSource.Play();
+
+        Object.Destroy(soundGameObject, audioSource.clip.length);
+        return audioSource.clip.length;
     }
 
     private static AudioClip GetAudioClip(Sound sound)
@@ -113,10 +140,10 @@ public static class SoundManager
         return 1;
     }
 
-    private static void AssignMixer(string name, AudioSource source)
+    private static void AssignMixer(Mixer mixer, AudioSource source)
     {
-        if (audioMixer != null)
-            source.outputAudioMixerGroup = audioMixer.FindMatchingGroups(name)[0];
+        if (audioMixer != null          )
+            source.outputAudioMixerGroup = audioMixer.FindMatchingGroups(mixer.ToString())[0]; 
         else
             Debug.LogError("You Dumb Fuck, there is no Mixer to Accesess");
     }

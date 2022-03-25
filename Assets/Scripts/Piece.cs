@@ -50,7 +50,7 @@ public class Piece: MonoBehaviour
     public void Onhit()
     {
         if (!puzzleSolved) {
-            SoundManager.PlaySound(SoundManager.Sound.PuzzleInteract, transform.position, "SFX");
+            SoundManager.PlaySound(SoundManager.Sound.PuzzleInteract, transform.position, SoundManager.Mixer.SFX);
 
             isOn = isOn ? false : true;
             SwitchColors();

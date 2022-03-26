@@ -5206,11 +5206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.3349012
+      value: -1.370359
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.342024
+      value: -8.882195
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -5298,11 +5298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.3349012
+      value: -1.370359
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.342024
+      value: -8.882195
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -5466,11 +5466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.3349012
+      value: -1.370359
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -9.342024
+      value: -8.882195
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -17820,9 +17820,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2877425572113335764, guid: e7208447fc5c50042bf820ec1b979531, type: 3}
+      propertyPath: weight
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877425572113335764, guid: e7208447fc5c50042bf820ec1b979531, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2877425572113335764, guid: e7208447fc5c50042bf820ec1b979531, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: ae60e7256d51abd41ba40b28786d863b, type: 2}
     - target: {fileID: 2877425572113335765, guid: e7208447fc5c50042bf820ec1b979531, type: 3}
       propertyPath: m_Name
       value: PostPros

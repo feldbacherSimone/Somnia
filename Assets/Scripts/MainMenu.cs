@@ -47,8 +47,10 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] Dropdown dropdown;
 
-    bool startScrren = true; 
-    
+    bool startScrren = true;
+
+    float lastSliderVal; 
+
     void InitButtons()
     {
         b_Options.onClick.AddListener(() =>
@@ -79,6 +81,7 @@ public class MainMenu : MonoBehaviour
         dropdown.onValueChanged.AddListener((value) =>
         {
             QualitySettings.SetQualityLevel(value*2);
+
             SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
         });
 
@@ -90,7 +93,11 @@ public class MainMenu : MonoBehaviour
         slider.onValueChanged.AddListener((value) =>
         {
             audioMixer.SetFloat(parameter, Mathf.Log10(value) * 20 );
-            SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
+            if (value > lastSliderVal + 0.1f || value < lastSliderVal - 0.1f) 
+            {
+                SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
+                lastSliderVal = value; 
+            }
         }
         );
     }

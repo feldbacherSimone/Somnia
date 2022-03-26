@@ -43,7 +43,31 @@ Material:
         m_Texture: {fileID: 2800000, guid: 31aceefa3d3137846a5f21b5aaa83b2a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_127cd4a9cfd349839171dfa9fc9c5621_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4beec2975f38cc847888cc7c3fb9447f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_34c7a455841b48a38d647264bd75b146_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_9ae77b3e27954595a0d562df0f28a962_Texture_1:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a7f71004ade14a2098d42a50e0333f35_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 369a12bdd082f8b44a6fdaa33a894b10, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d03e55adf43946b8b924b468aae2dd5e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 31aceefa3d3137846a5f21b5aaa83b2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_d8aaa0b9c1e0427caaacb546ef2b5c4e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1b74bca992f09c64fbee7b775c022950, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ed2bd88cc9b548669a00a2e7a1107f42_Texture_1:
         m_Texture: {fileID: 2800000, guid: 1b74bca992f09c64fbee7b775c022950, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -59,7 +83,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - Vector1_06c8ca9b99d445099121677e5fd2ddce: 151.6
     m_Colors:
-    - Color_c4f8ab95e0824e09aa1eff2a5bf76d69: {r: 1, g: 0.5205797, b: 0, a: 1}
+    - Color_c4f8ab95e0824e09aa1eff2a5bf76d69: {r: 1, g: 0.52156866, b: 0, a: 1}
+    - Color_d879451a8c054e5495902eaf701524d4: {r: 3.482202, g: 1.2979206, b: 0.7474884, a: 1}
   m_BuildTextureStacks: []

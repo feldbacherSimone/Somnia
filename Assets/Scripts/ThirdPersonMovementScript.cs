@@ -70,6 +70,8 @@ public class ThirdPersonMovementScript : MonoBehaviour
     [SerializeField] private float deathHeight;
     [SerializeField] private float midpointHeight;
 
+    public float speed; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,7 +118,7 @@ public class ThirdPersonMovementScript : MonoBehaviour
 
     private void Move()
     {
-        float speed = _inputs.sprint ? sprintSpeed : walkSpeed;
+         speed = _inputs.sprint ? sprintSpeed : walkSpeed;
 
         Vector2 moveInput = _inputs.move;
         currentInput =  Vector2.SmoothDamp(currentInput, moveInput, ref smoothMoveVelocity, moveSmoothTime);

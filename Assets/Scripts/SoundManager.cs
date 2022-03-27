@@ -33,6 +33,8 @@ public static class SoundManager
     private static GameObject stepSoundObject;
     private static AudioSource stepSource;
 
+    private static GameObject DelaySource; 
+
     private static AudioMixer audioMixer; 
 
     public static void LoadMixer()
@@ -110,6 +112,11 @@ public static class SoundManager
         Object.Destroy(soundGameObject, audioSource.clip.length);
         return audioSource.clip.length;
     }
+
+
+     
+
+
 
     private static AudioClip GetAudioClip(Sound sound)
     {

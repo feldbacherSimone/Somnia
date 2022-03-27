@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836fba37e8552f541abf20055e192196, type: 3}
   m_Name: NewAtmosphericFogRenderFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     color: {r: 0.31946722, g: 0.18326804, b: 0.8301887, a: 1}
     sunColor: {r: 0.9716981, g: 0.9249949, b: 0.3061765, a: 1}

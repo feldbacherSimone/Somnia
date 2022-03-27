@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
 
 
     [SerializeField] private float minY = 0.5f, maxY = 4;
-    [SerializeField] private float minx = 100, maxx = 400;
+    [SerializeField] private float minx = 100, maxx = 300;
 
     private float lastSliderVal; 
 

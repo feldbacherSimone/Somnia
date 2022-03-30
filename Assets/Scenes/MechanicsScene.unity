@@ -4026,8 +4026,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578801303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00042754106}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0101}
+  m_LocalScale: {x: 0.35724, y: 0.35724, z: 5.221777}
   m_Children: []
   m_Father: {fileID: 543450653591540876}
   m_RootOrder: 0
@@ -4083,7 +4083,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a61584e6aeca4604b982eaef32f2fcd8, type: 2}
+  - {fileID: 2100000, guid: 6c5b5ea6b3e89e349ac46c7c006e2f52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4112,7 +4112,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578801303}
-  m_Mesh: {fileID: 7035690196794747791, guid: 39cdab395d8efbd4c893311da9940491, type: 3}
+  m_Mesh: {fileID: 8937665938935388488, guid: 025a7f81d66cb3e4eaaf9219aeba5cda, type: 3}
 --- !u!114 &582850864 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7471950859163481899, guid: 32b840f95cd920949b715b3ac08e88dc, type: 3}

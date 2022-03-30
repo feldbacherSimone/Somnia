@@ -14,14 +14,26 @@ public class Piece: MonoBehaviour
     public bool puzzleSolved = false;
     [SerializeField] Piece sisterTile;
     [SerializeField] private bool isLine;
-    public  Outline outline; 
+    public  Outline outline;
+
+    [SerializeField] Material offMatOverride;
+    [SerializeField] Material onMatOverride; 
     private void Awake()
     {
        
         meshRenderer = gameObject.GetComponent<MeshRenderer>();
- 
-        onMat = (Material)Resources.Load("Materials/OnMat");
-        offMat = (Material)Resources.Load("Materials/OffMat");
+        
+        if(offMatOverride  == null|| onMatOverride == null)
+        {
+            onMat = (Material)Resources.Load("Materials/OnMat");
+            offMat = (Material)Resources.Load("Materials/OffMat");
+        }
+        else
+        {
+            onMat = onMatOverride;
+            offMat = offMatOverride;
+        }
+    
         SwitchColors();
         AddOutline(gameObject);
 

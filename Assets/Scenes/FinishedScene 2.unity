@@ -35401,6 +35401,10 @@ PrefabInstance:
       value: Column (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4636350879707631161, guid: f4e85fac830a8ef4fadd0c83b11166ff, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636350879707631161, guid: f4e85fac830a8ef4fadd0c83b11166ff, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

@@ -19,6 +19,7 @@ public class Elevator : MonoBehaviour
     public void Activate()
     {
         SoundManager.PlaySound(SoundManager.Sound.AvtivateElevator, transform.position, SoundManager.Mixer.SFX);
+        SoundManager.PlaySound(SoundManager.Sound.ActivateElevator2, transform.position, SoundManager.Mixer.SFX);
         StartCoroutine(WaitAndAnimate(2f));
        
     }

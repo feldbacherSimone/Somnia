@@ -6,17 +6,21 @@ public class Elevator : MonoBehaviour
 {
     [SerializeField] Transform startPoint;
     [SerializeField] Transform tragetPoint;
-    
+    private Animator animator; 
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         if (startPoint == null)
             startPoint = gameObject.transform; 
+
     }
 
     public void Activate()
     {
-        Debug.Log("TEST LMAO"); 
+        SoundManager.PlaySound(SoundManager.Sound.AvtivateElevator, transform.position, SoundManager.Mixer.SFX);
+        StartCoroutine(WaitAndAnimate(2f));
+       
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -33,4 +37,13 @@ public class Elevator : MonoBehaviour
         }
     }
 
+   
+    
+    IEnumerator WaitAndAnimate(float time)
+    {
+        yield return new WaitForSeconds(time);
+        animator.enabled = true;
+        Debug.Log("Elevator Activated");
+        StopAllCoroutines();
+    }
 }

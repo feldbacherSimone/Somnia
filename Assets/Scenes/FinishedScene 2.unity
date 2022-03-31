@@ -3831,9 +3831,9 @@ GameObject:
   - component: {fileID: 173796009}
   - component: {fileID: 173796008}
   - component: {fileID: 173796007}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: stand (1)
-  m_TagString: Untagged
+  m_TagString: CamIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -85588,7 +85588,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.1
@@ -106121,9 +106121,9 @@ GameObject:
   - component: {fileID: 2074567467}
   - component: {fileID: 2074567466}
   - component: {fileID: 2074567465}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: stand
-  m_TagString: Untagged
+  m_TagString: CamIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -106135,13 +106135,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074567463}
-  m_LocalRotation: {x: -0.6435877, y: 0.292908, z: 0.29290777, w: 0.6435875}
-  m_LocalPosition: {x: 5.427864, y: 20.628918, z: -47.312107}
+  m_LocalRotation: {x: -0.6434096, y: 0.29359576, z: 0.29169574, w: 0.6440025}
+  m_LocalPosition: {x: 5.459357, y: 20.62158, z: -47.31391}
   m_LocalScale: {x: 58.87365, y: 58.873623, z: 51.426105}
   m_Children: []
   m_Father: {fileID: 210838807}
   m_RootOrder: 55
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.839, y: 97.118, z: -48.222}
 --- !u!64 &2074567465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107265,7 +107265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2133414190
 Transform:
   m_ObjectHideFlags: 0

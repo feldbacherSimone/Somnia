@@ -5782,11 +5782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.651947
+      value: 2.263043
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11.87637
+      value: -11.99806
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426079083214, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -5822,11 +5822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426217420204, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_XAxis.m_MaxSpeed
-      value: 130.981
+      value: 189.9772
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426217420204, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_YAxis.m_MaxSpeed
-      value: 1.22289
+      value: 2.599468
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426217420204, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Orbits.Array.data[0].m_Height
@@ -5902,11 +5902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.651947
+      value: 2.263043
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11.87637
+      value: -11.99806
       objectReference: {fileID: 0}
     - target: {fileID: 8270422426316013260, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -6070,11 +6070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 2.651947
+      value: 2.263043
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -11.87637
+      value: -11.99806
       objectReference: {fileID: 0}
     - target: {fileID: 8270422427118267978, guid: 0d6886eb33047b944aca2c6c5582dff3, type: 3}
       propertyPath: m_Heading.m_Bias
@@ -11091,6 +11091,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: de88a8b11912a3348bd1f75b6e62c626, type: 3}
       propertyPath: m_Name
       value: Wandeee
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de88a8b11912a3348bd1f75b6e62c626, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de88a8b11912a3348bd1f75b6e62c626, type: 3}

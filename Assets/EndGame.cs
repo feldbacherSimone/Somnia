@@ -18,6 +18,7 @@ public class EndGame : MonoBehaviour
     {
         flash.PlayFlash();
         SoundManager.PlaySound(SoundManager.Sound.TouchPortal, SoundManager.Mixer.SFX);
+        Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(3);
     }

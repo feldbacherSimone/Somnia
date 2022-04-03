@@ -13,6 +13,8 @@ public class PuzzleLine : MonoBehaviour
 
     [SerializeField] private bool solved;
 
+    
+
     private void Start()
     {
         width = tiles.Length;
@@ -72,7 +74,7 @@ public class PuzzleLine : MonoBehaviour
                 tile.GetComponent<Piece>().enabled = false;
                 tile.GetComponent<Piece>().puzzleSolved = true;
             }
-            GameProgress._instance.addSolved(puzzleID);
+            GameProgress._instance.addSolved(true);
         }
     }
 

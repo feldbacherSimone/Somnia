@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_IsActive
@@ -3627,6 +3627,10 @@ PrefabInstance:
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_Name
       value: Halter (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_IsActive
@@ -34863,6 +34867,10 @@ PrefabInstance:
       value: Portal (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -35748,7 +35756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76cb6c15659385143bbc8a05a7cc804f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.22
+      value: 2.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76cb6c15659385143bbc8a05a7cc804f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52028,7 +52036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_IsActive
@@ -59470,6 +59478,10 @@ PrefabInstance:
       value: Portal (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -64561,6 +64573,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 634058565}
     m_Modifications:
     - target: {fileID: 789880488133842020, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 789880488133842020, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -64571,6 +64587,10 @@ PrefabInstance:
     - target: {fileID: 7471131397659173838, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
       propertyPath: m_Name
       value: untitled (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471131397659173838, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7471131397659173838, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
       propertyPath: m_IsActive
@@ -64635,6 +64655,10 @@ PrefabInstance:
     - target: {fileID: 7846707340803733876, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245126374041430726, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8245126374041430726, guid: b3417e2209b2f5f41a96d5c59184f597, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -67384,6 +67408,10 @@ PrefabInstance:
     - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
       propertyPath: m_Name
       value: Portal (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6467019612364150470, guid: d1eb53c151505a34daeb78471ceeeec1, type: 3}
       propertyPath: m_IsActive
@@ -73854,6 +73882,10 @@ PrefabInstance:
     - target: {fileID: 3392864084727176101, guid: 11f9f3557bef03f4fa95561c4a19c8e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 43.955
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392864084736593802, guid: 11f9f3557bef03f4fa95561c4a19c8e9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3392864085536574054, guid: 11f9f3557bef03f4fa95561c4a19c8e9, type: 3}
       propertyPath: m_Name
@@ -80829,6 +80861,10 @@ PrefabInstance:
     - target: {fileID: 7446383911941175016, guid: ca077e8d1386e8449aeb7a16cac90fab, type: 3}
       propertyPath: m_Name
       value: wandA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446383911941175016, guid: ca077e8d1386e8449aeb7a16cac90fab, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7446383911941175016, guid: ca077e8d1386e8449aeb7a16cac90fab, type: 3}
       propertyPath: m_IsActive
@@ -102817,7 +102853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1209262421598247378, guid: 687b141cb466b1e40b7e92d899293069, type: 3}
       propertyPath: m_IsActive

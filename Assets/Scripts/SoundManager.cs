@@ -20,6 +20,7 @@ public static class SoundManager
        DisableBarrier, 
        AvtivateElevator, 
        ActivateElevator2, 
+       TouchPortal, 
     }
 
     public enum Mixer //there's only two channels at this point but if i have to debug for 30 minutes just because I made a typo again one more time im gonna dlelete this project 

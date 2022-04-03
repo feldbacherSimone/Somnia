@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/test.unity
     guid: c63ed9c8a82d085428ec53bcc63549f5
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: db5c5ff4204ae604eb6b9accc41d29fa
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 99ab5b8e10a9ba5499235117a24e762f, type: 2}

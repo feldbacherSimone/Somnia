@@ -13,68 +13,61 @@ public class Flash : MonoBehaviour
     bool isFlashing;
     public float aMin;
     public float bMax;
-    float t = 1;
+
+    public float tMin = 0;
+    public float tMax; 
+    float t = 0;
 
     float intensity;
+    float threshhold; 
 
     VolumeProfile volumeProfile;
 
 
     Bloom bloom;
 
+
     private void Start()
     {
         volumeProfile = GetComponent<Volume>().sharedProfile;
         volumeProfile.TryGet(out bloom);
+
+
+
         }
-    private void Update()
+    public void PlayFlash()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            print("click");
-            isFlashing = true; 
-            StartCoroutine(PlayFlash(speed));
-        }
+        StartCoroutine(PlayFlash(speed)); 
     }
 
     IEnumerator PlayFlash(float speed)
     {
 
-        while(isFlashing)
-        {
-            print("isPlaying");
-
-            intensity = Mathf.Lerp(aMin, bMax, t);
-            bloom.threshold.value = intensity;
-            t -= speed;
-            yield return null;
-
-            if (t <= 0)
-                isFlashing = false; 
-
-        }
+       
        
 
        
-        while (!isFlashing)
+        while (t <= 1)
         {
             print("isPlaying");
             t += speed;
 
-            if (t >= 1)
-            {
-
-                bloom.threshold.value = bMax; 
-                StopAllCoroutines();
-            }
+       
 
             intensity = Mathf.Lerp(aMin, bMax, t);
-            bloom.threshold.value = intensity;
-           
+            bloom.intensity.value = intensity;
+            threshhold = Mathf.Lerp(tMax, tMin, t);
+            bloom.threshold.value = threshhold;
+
+
             yield return null;
 
-            if (t >= 1)
-                StopAllCoroutines();
+
+
         }
+        yield return new WaitForSeconds(1);
+        bloom.intensity.value = aMin;
+        bloom.threshold.value = tMax; 
+        
     }
 }

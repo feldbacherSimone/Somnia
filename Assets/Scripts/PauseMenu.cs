@@ -81,6 +81,8 @@ public class PauseMenu : MonoBehaviour
         {
             SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
             Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 1f;
+            gameIsPaused = false;
             SceneManager.LoadScene(0); 
 
         });

@@ -35,7 +35,12 @@ public class EndScreen : MonoBehaviour
     [SerializeField] SpriteRenderer title;
     [SerializeField] AudioMixer audioMixer;
 
-    [SerializeField] Flash flash; 
+    [SerializeField] Flash flash;
+
+
+    [SerializeField] Text thankYouTXT;
+    [SerializeField] Text devTXT;
+    [SerializeField] GameObject specialThankies; 
 
     bool startScrren = true;
     bool secondScreen = false; 
@@ -77,7 +82,10 @@ public class EndScreen : MonoBehaviour
         {
             SoundManager.PlaySound(SoundManager.Sound.TitleFade, SoundManager.Mixer.SFX); 
             StartCoroutine(MoveCamera(initCamera, cam1, mainMenueObject));
+           // StartCoroutine(FadeInText(0, 1, devTXT));
+            //StartCoroutine(FadeInText(1, 0, thankYouTXT));
             StartCoroutine(FadeTitle());
+
             startScreenObject.SetActive(false);
             startScrren = false;
            
@@ -86,6 +94,8 @@ public class EndScreen : MonoBehaviour
         {
             SoundManager.PlaySound(SoundManager.Sound.TitleFade, SoundManager.Mixer.SFX);
             StartCoroutine(MoveCamera(cam1, cam2, optionsObject));
+          //  StartCoroutine(FadeInText(0, 1, specialThankies));
+           // StartCoroutine(FadeInText(1, 0, devTXT));
             mainMenueObject.SetActive(false);
           
         }
@@ -150,4 +160,59 @@ public class EndScreen : MonoBehaviour
         ;*/
     }
 
+    IEnumerator FadeInText(float a, float b, Text text)
+    {
+        float deltaTime = 0;
+        float t = 0;
+
+        do
+        {
+            Color color = new Color(text.color.r, text.color.g, text.color.b, Mathf.Lerp(a, b, curve.Evaluate(t)));
+            text.color = color;
+
+            deltaTime += Time.deltaTime;
+            t = deltaTime / duration;
+
+            print(color);
+            yield return null;
+        }
+        while (t <= 1.1f);
+
+
+
+        yield return null;
+        StopAllCoroutines();
+    }
+    IEnumerator FadeInText(float a, float b, GameObject gObject)
+    {
+        float deltaTime = 0;
+        float t = 0;
+
+
+
+        foreach (Transform child in gObject.transform)
+        {
+            do
+            {
+                Text text = child.GetComponent<Text>();
+                Color color = new Color(text.color.r, text.color.g, text.color.b, Mathf.Lerp(a, b, curve.Evaluate(t)));
+                text.color = color;
+
+                deltaTime += Time.deltaTime;
+                t = deltaTime / duration;
+
+                print(color);
+                yield return null;
+            }
+            while (t <= 1.1f);
+            
+
+
+                yield return null;
+                StopAllCoroutines();
+            }
+        }
+
+        
+    
 }

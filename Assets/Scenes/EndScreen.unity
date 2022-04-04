@@ -181,8 +181,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 80b688d86b5d5584f8ff04bf9b5f4395, type: 3}
-    m_FontSize: 77
+    m_Font: {fileID: 12800000, guid: 16983895b8604b544a11651b03f7712e, type: 3}
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Wilfried Gruber \nNikolaus Hopeenthaler\n\n"
+  m_Text: "Wilfried Gruber \nNikolaus Hoppenthaler\n\n"
 --- !u!222 &84935429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5779,7 +5779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327088920293448736, guid: bd12f2d1183ee1c439aeb9bda55bf0cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.39
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 5327088920293448736, guid: bd12f2d1183ee1c439aeb9bda55bf0cc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6280,7 +6280,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 80b688d86b5d5584f8ff04bf9b5f4395, type: 3}
+    m_Font: {fileID: 12800000, guid: 16983895b8604b544a11651b03f7712e, type: 3}
     m_FontSize: 92
     m_FontStyle: 0
     m_BestFit: 0
@@ -6549,7 +6549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457365825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.39, z: -17.49}
+  m_LocalPosition: {x: 0, y: 2.3, z: -17.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6638,7 +6638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3004233115871758888, guid: 4f88511137d18224f8b4c3b33661e71b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.39
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 3004233115871758888, guid: 4f88511137d18224f8b4c3b33661e71b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6834,7 +6834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Thank you \nfor playing!\n "
+  m_Text: "THANK YOU \nFOR PLAYING!"
 --- !u!222 &1705088936
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6901,8 +6901,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 80b688d86b5d5584f8ff04bf9b5f4395, type: 3}
-    m_FontSize: 77
+    m_Font: {fileID: 12800000, guid: 16983895b8604b544a11651b03f7712e, type: 3}
+    m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6913,7 +6913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Andrewkn (Music) \nGregorQuendel (Music) \n"
+  m_Text: "GregorQuendel (Intro Music) \nAndrewkn (End Music) \n\n"
 --- !u!222 &1740039300
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6966,7 +6966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTarget: {fileID: 889414711}
-  initCamera: {x: 0, y: 2.39, z: -7.96}
+  initCamera: {x: 0, y: 2.23, z: -7.96}
   cam1: {x: 0, y: -0.4, z: -3.1}
   cam2: {x: 0, y: -6.04, z: -3.1}
   curve:

@@ -99,6 +99,11 @@ public class ThirdPersonMovementScript : MonoBehaviour
         
 
         _jumoTimeOutDelta -= Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            transform.position = respawnCoords;
+        }
     
     }
     private void LateUpdate()

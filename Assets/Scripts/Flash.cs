@@ -35,12 +35,12 @@ public class Flash : MonoBehaviour
 
 
         }
-    public void PlayFlash()
+    public void PlayFlash(bool reset)
     {
-        StartCoroutine(PlayFlash(speed)); 
+        StartCoroutine(PlayFlash(speed, reset)); 
     }
 
-    IEnumerator PlayFlash(float speed)
+    IEnumerator PlayFlash(float speed, bool reset)
     {
 
        
@@ -65,9 +65,13 @@ public class Flash : MonoBehaviour
 
 
         }
-        yield return new WaitForSeconds(1);
-        bloom.intensity.value = aMin;
-        bloom.threshold.value = tMax; 
-        
+        print("done");
+        if (reset)
+        {
+            yield return new WaitForSeconds(1);
+
+            bloom.intensity.value = aMin;
+            bloom.threshold.value = tMax;
+        }
     }
 }

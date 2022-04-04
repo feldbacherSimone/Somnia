@@ -16,7 +16,7 @@ public class EndGame : MonoBehaviour
     }
     IEnumerator LoadScene()
     {
-        flash.PlayFlash();
+        flash.PlayFlash(true);
         SoundManager.PlaySound(SoundManager.Sound.TouchPortal, SoundManager.Mixer.SFX);
         Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSeconds(0.5f);

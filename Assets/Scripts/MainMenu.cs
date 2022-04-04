@@ -16,7 +16,8 @@ public class MainMenu : MonoBehaviour
     [Tooltip("This refers to the offset variables in the Mouse target and not the actual Camera Position")]
     [SerializeField] private Vector3 initCamera;
     [SerializeField] private Vector3 mainMenuCam;
-    [SerializeField] private Vector3 optionsCam; 
+    [SerializeField] private Vector3 optionsCam;
+    [SerializeField] private Vector3 controlCam;
 
     [SerializeField] AnimationCurve curve;
     [SerializeField] float duration = 1f;
@@ -25,7 +26,8 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] GameObject mainMenueObject;
     [SerializeField] GameObject optionsObject;
-    [SerializeField] GameObject startScreenObject; 
+    [SerializeField] GameObject startScreenObject;
+    [SerializeField] GameObject controlScreenObject;
 
     [Header("Buttons")]
    
@@ -33,6 +35,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Button b_Play;
     [SerializeField] Button b_ExitGame;
     [SerializeField] Button b_Back;
+    [SerializeField] Button b_Back2;
     [SerializeField] Button b_Controlls; 
 
     [Header("Sliders")]
@@ -84,10 +87,22 @@ public class MainMenu : MonoBehaviour
 
             SoundManager.PlaySound(SoundManager.Sound.MenuButton, SoundManager.Mixer.SFX);
         });
+        b_Controlls.onClick.AddListener(() =>
+        {
+            StartCoroutine(MoveCamera(mainMenuCam, controlCam, controlScreenObject));
+            mainMenueObject.SetActive(false);
+        }
+       );
+        b_Back2.onClick.AddListener(() =>
+        {
+            StartCoroutine(MoveCamera(controlCam, mainMenuCam, mainMenueObject));
+            controlScreenObject.SetActive(false);
+        }
+       );
 
 
     }
-    
+
     void InitSliders(Slider slider, string parameter)
     {
         slider.onValueChanged.AddListener((value) =>

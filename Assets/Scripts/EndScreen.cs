@@ -35,7 +35,7 @@ public class EndScreen : MonoBehaviour
     [SerializeField] SpriteRenderer title;
     [SerializeField] AudioMixer audioMixer;
 
-
+    [SerializeField] Flash flash; 
 
     bool startScrren = true;
     bool secondScreen = false; 
@@ -64,7 +64,7 @@ public class EndScreen : MonoBehaviour
 
     private void Start()
     {
-
+        flash.PlayFlash(false);
         SoundManager.LoadMixer();
         scene = SceneManager.GetActiveScene();
 

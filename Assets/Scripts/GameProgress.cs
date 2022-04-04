@@ -47,6 +47,20 @@ public class GameProgress : MonoBehaviour
         {
             ammountSloved = puzzles.Length + 1; 
         }
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                puzzles[i].solved = true;
+            }
+          
+            foreach (Condition condition in conditions)
+            {
+                if (!condition.isTrue)
+                    ValidateCondition(condition);
+
+            }
+        }
         if (Input.GetKeyDown(KeyCode.F2))
         {
             endShader.SetActive(true);
